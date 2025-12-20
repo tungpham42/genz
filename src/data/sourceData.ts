@@ -4490,4 +4490,203 @@ export const TERMS: GenZTerm[] = [
     example: "Đi chơi không? OFC đi chứ!",
     tags: ["daily", "agree"],
   },
+
+  // =================================================================
+  // MẠNG XÃ HỘI & LIVESTREAM (SOCIAL MEDIA & STREAMING)
+  // =================================================================
+  {
+    term: "Tóp Tóp",
+    definition:
+      "Cách gọi lóng của mạng xã hội TikTok (đọc trại âm cho vui tai).",
+    variation: ["Tiktok"],
+    example: "Lướt Tóp Tóp quá 180 phút một ngày.",
+    tags: ["social", "app", "slang"],
+  },
+  {
+    term: "Phở Bò",
+    definition:
+      "Cách gọi lóng của Facebook (viết tắt FB -> Phở Bò). Dùng để tránh bị bóp tương tác hoặc chặn từ khóa.",
+    variation: ["Facebook", "FBook"],
+    example: "Nhắn tin qua Phở Bò cho tao nhé.",
+    tags: ["social", "app", "slang"],
+  },
+  {
+    term: "Tiu Túp",
+    definition: "Cách gọi lóng của YouTube.",
+    variation: ["Youtube", "YT"],
+    example: "Lên Tiu Túp xem MV mới của sếp.",
+    tags: ["social", "app", "slang"],
+  },
+  {
+    term: "Zép Lào",
+    definition: "Cách gọi lóng của Zalo (Zalo -> Zép Lào).",
+    variation: ["Zalo"],
+    example: "Gửi ảnh HD qua Zép Lào đi.",
+    tags: ["social", "app", "slang"],
+  },
+  {
+    term: "PK",
+    definition:
+      "Player Killing (thuật ngữ game), nhưng trên TikTok nghĩa là thi đấu livestream giữa 2 người xem ai được tặng nhiều quà hơn.",
+    variation: ["Kèo PK", "Đấu"],
+    example: "Tối nay 8h có kèo PK căng cực giữa hai idol.",
+    tags: ["livestream", "tiktok"],
+  },
+  {
+    term: "Donate",
+    definition:
+      "Hành động tặng tiền hoặc vật phẩm ảo (hoa, sư tử, tên lửa...) cho streamer để ủng hộ.",
+    variation: ["Tặng quà", "Mừng tuổi"],
+    example: "Fan cứng donate cả con sư tử trên live.",
+    tags: ["livestream", "money"],
+  },
+  {
+    term: "Mắt",
+    definition:
+      "Số lượng người đang xem trực tiếp (livestream) tại một thời điểm.",
+    variation: ["Mắt xem", "View"],
+    example: "Live này tụt mắt quá, còn có 50 người xem.",
+    tags: ["livestream", "metric"],
+  },
+  {
+    term: "Chốt đơn",
+    definition:
+      "Hành động xác nhận mua hàng trên livestream. Câu cửa miệng của các chiến thần bán hàng online.",
+    variation: ["Chốt"],
+    example: "Mã áo này đẹp quá, chốt đơn ngay kẻo hết.",
+    tags: ["livestream", "shopping"],
+  },
+  {
+    term: "Nổ đơn",
+    definition:
+      "Nhận được rất nhiều đơn đặt hàng cùng một lúc, buôn may bán đắt.",
+    variation: ["Bão đơn"],
+    example: "Vía tốt quá, nổ đơn ầm ầm.",
+    tags: ["livestream", "shopping"],
+  },
+  {
+    term: "Gắn giỏ hàng",
+    definition:
+      "Tính năng trên TikTok Shop, cho phép người xem bấm vào mua sản phẩm ngay trong video/livestream.",
+    variation: ["Ghim giỏ"],
+    example: "Em gắn giỏ hàng rồi, mọi người ấn vào mua nha.",
+    tags: ["tiktok", "shopping"],
+  },
+  {
+    term: "Cày view",
+    definition:
+      "Hành động xem đi xem lại một video/MV nhiều lần trên nhiều thiết bị để tăng lượt xem cho thần tượng.",
+    variation: ["Cày"],
+    example: "Hội fandom đang cày view thâu đêm cho MV mới.",
+    tags: ["social", "fan"],
+  },
+  {
+    term: "Sub chéo",
+    definition:
+      "Hành động đăng ký (Subscribe/Follow) kênh của nhau để cùng tăng lượng người theo dõi.",
+    variation: ["Follow chéo", "Fl chéo"],
+    example: "Ai sub chéo không? Uy tín trả liền.",
+    tags: ["social", "action"],
+  },
+  {
+    term: "Bão like",
+    definition:
+      "Hành động bấm thích liên tục nhiều bài viết của một người cùng lúc để gây chú ý.",
+    variation: ["Spam like"],
+    example: "Crush vừa vào bão like ảnh của tao kìa.",
+    tags: ["social", "action"],
+  },
+  {
+    term: "Stalk",
+    definition:
+      "Theo dõi âm thầm, soi mói trang cá nhân của người khác (người yêu cũ, crush, kẻ thù...).",
+    variation: ["Soi"],
+    example: "Đêm nào cũng đi stalk facebook người yêu cũ.",
+    tags: ["social", "action"],
+  },
+  {
+    term: "Content bẩn",
+    definition:
+      "Nội dung nhảm nhí, độc hại, câu view bất chấp đạo đức (như ăn đồ sống, troll lố bịch...).",
+    variation: ["Rác mạng"],
+    example: "Tẩy chay mấy kênh làm content bẩn đi.",
+    tags: ["social", "bad"],
+  },
+  {
+    term: "KOC",
+    definition:
+      "Key Opinion Consumer. Người tiêu dùng có sức ảnh hưởng, chuyên review sản phẩm chân thực (khác với KOL là người nổi tiếng).",
+    variation: ["Reviewer"],
+    example: "Nghề KOC đang hot, thu nhập khủng nhờ affiliate.",
+    tags: ["job", "social"],
+  },
+  {
+    term: "Booking",
+    definition: "Việc nhãn hàng thuê KOL/KOC/Influencer quảng cáo sản phẩm.",
+    variation: ["Book bài"],
+    example: "Tháng này ít job booking quá, đói.",
+    tags: ["job", "social"],
+  },
+  {
+    term: "Affiliate",
+    definition:
+      "Tiếp thị liên kết. Kiếm tiền bằng cách chia sẻ link sản phẩm, nếu có người mua sẽ được hoa hồng.",
+    variation: ["Gắn link"],
+    example: "Làm affiliate TikTok giờ kiếm ác lắm.",
+    tags: ["job", "money"],
+  },
+  {
+    term: "Story",
+    definition: "Tính năng đăng ảnh/video ngắn chỉ tồn tại trong 24 giờ (Tin).",
+    variation: ["Tin 24h"],
+    example: "Đăng story để xem crush có vào xem không.",
+    tags: ["social", "feature"],
+  },
+  {
+    term: "Reels",
+    definition:
+      "Tính năng video ngắn của Facebook/Instagram (cạnh tranh với TikTok).",
+    variation: ["Thước phim"],
+    example: "Lướt Reels cuốn quá quên cả ngủ.",
+    tags: ["social", "feature"],
+  },
+  {
+    term: "Trending",
+    definition: "Xu hướng thịnh hành. Những chủ đề đang hot nhất trên mạng.",
+    variation: ["Top trending", "Xu hướng"],
+    example: "Vụ này đang lọt top 1 trending rồi.",
+    tags: ["social", "rank"],
+  },
+  {
+    term: "Viral",
+    definition:
+      "Lan truyền mạnh mẽ. Nội dung được chia sẻ với tốc độ chóng mặt.",
+    variation: ["Phủ sóng"],
+    example: "Clip con mèo này đang viral khắp TikTok.",
+    tags: ["social", "status"],
+  },
+  {
+    term: "Acc clone",
+    definition:
+      "Tài khoản phụ/ảo, dùng để đi comment dạo, soi mói hoặc seeding mà không lộ danh tính thật.",
+    variation: ["Nick phụ"],
+    example: "Dùng acc clone vào chửi cho nó một trận.",
+    tags: ["social", "account"],
+  },
+  {
+    term: "Bay màu",
+    definition:
+      "Bị xóa tài khoản, xóa bài viết hoặc biến mất khỏi mạng xã hội (thường do vi phạm tiêu chuẩn cộng đồng).",
+    variation: ["Mất nick"],
+    example: "Page triệu like vừa bị bay màu trong đêm.",
+    tags: ["social", "fail"],
+  },
+  {
+    term: "Bóp tương tác",
+    definition:
+      "Thuật toán của nền tảng hạn chế hiển thị bài viết, khiến ít người nhìn thấy.",
+    variation: ["Flop"],
+    example: "Dạo này Facebook bóp tương tác ghê quá, đăng ảnh không ai like.",
+    tags: ["social", "fail"],
+  },
 ];
