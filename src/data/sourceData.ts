@@ -4332,4 +4332,162 @@ export const TERMS: GenZTerm[] = [
     example: "Đội tóc giả nhìn không hề giả trân chút nào.",
     tags: ["meme", "fake"],
   },
+
+  // =================================================================
+  // TỪ VIẾT TẮT TIẾNG ANH & SLANG QUỐC TẾ (GLOBAL SLANG)
+  // =================================================================
+  {
+    term: "GOAT",
+    definition:
+      "Greatest Of All Time. Vĩ đại nhất mọi thời đại. Dùng để tôn vinh một huyền thoại trong lĩnh vực nào đó.",
+    variation: ["G.O.A.T"],
+    example: "Messi is the GOAT.",
+    tags: ["khen", "sport"],
+  },
+  {
+    term: "POV",
+    definition:
+      "Point Of View. Quan điểm hoặc góc nhìn của một người. Thường dùng trong các video đóng vai tình huống trên TikTok.",
+    variation: ["Góc nhìn"],
+    example: "POV: Khi bạn đi họp lớp nhưng quên mang tiền.",
+    tags: ["trend", "tiktok"],
+  },
+  {
+    term: "FOMO",
+    definition:
+      "Fear Of Missing Out. Hội chứng sợ bị bỏ lỡ. Cảm giác lo lắng khi mọi người đang làm gì đó vui vẻ mà mình không tham gia.",
+    variation: ["Sợ bỏ lỡ"],
+    example: "Thấy ai cũng chơi chứng khoán làm tao bị FOMO.",
+    tags: ["tamly", "trend"],
+  },
+  {
+    term: "YOLO",
+    definition:
+      "You Only Live Once. Bạn chỉ sống một lần trên đời. Khuyến khích sống hết mình, làm điều mình thích (đôi khi là liều lĩnh).",
+    variation: ["Sống hết mình"],
+    example: "Thích thì mua đi, YOLO mà.",
+    tags: ["lifestyle", "dongluc"],
+  },
+  {
+    term: "TMI",
+    definition:
+      "Too Much Information. Quá nhiều thông tin. Dùng khi ai đó chia sẻ những chuyện quá riêng tư hoặc không cần thiết phải biết.",
+    variation: ["Thừa thông tin"],
+    example: "Thôi đừng kể chi tiết quá, TMI rồi đấy.",
+    tags: ["daily", "reaction"],
+  },
+  {
+    term: "NPC",
+    definition:
+      "Non-Player Character. Nhân vật quần chúng trong game. Ám chỉ những người hành động dập khuôn, thiếu tư duy hoặc nhạt nhòa.",
+    variation: ["Nhân vật phụ"],
+    example: "Nhìn nó đứng đơ ra như NPC ấy.",
+    tags: ["game", "meme"],
+  },
+  {
+    term: "No cap",
+    definition:
+      "No lie. Không nói dối, nói thật 100%. Dùng để khẳng định độ uy tín của câu nói.",
+    variation: ["Thật đấy", "Uy tín"],
+    example: "Món này ngon nhức nách, no cap!",
+    tags: ["slang", "khangdinh"],
+  },
+  {
+    term: "Ngl",
+    definition:
+      "Not Gonna Lie. Không nói điêu đâu/Thú thật là. Dùng trước khi đưa ra một ý kiến chân thật.",
+    variation: ["Thật lòng"],
+    example: "Ngl, bộ đồ này trông hơi kỳ.",
+    tags: ["slang", "daily"],
+  },
+  {
+    term: "Fr",
+    definition:
+      "For Real. Thật á/Thật sự. Dùng để hỏi lại cho chắc hoặc đồng tình với ai đó (Fr fr).",
+    variation: ["Thật luôn"],
+    example: "Nó chia tay rồi á? Fr?",
+    tags: ["slang", "daily"],
+  },
+  {
+    term: "Sus",
+    definition: "Suspicious. Đáng ngờ, khả nghi (nổi lên từ game Among Us).",
+    variation: ["Khả nghi"],
+    example: "Thái độ thằng này sus lắm.",
+    tags: ["game", "meme"],
+  },
+  {
+    term: "W",
+    definition:
+      "Win. Chiến thắng, thành công. Dùng để comment chúc mừng hoặc khen ngợi.",
+    variation: ["Thắng"],
+    example: "Common W (Chiến thắng bình thường/như cơm bữa).",
+    tags: ["game", "khen"],
+  },
+  {
+    term: "L",
+    definition: "Loss/Lose. Thất bại, thua cuộc. Dùng để chê bai hoặc tự giễu.",
+    variation: ["Thua"],
+    example: "Take the L (Chấp nhận thất bại đi).",
+    tags: ["game", "bad"],
+  },
+  {
+    term: "J4F",
+    definition: "Just For Fun. Chỉ cho vui thôi, không có ý xấu.",
+    variation: ["Giỡn thôi"],
+    example: "Troll tí thôi, J4F mà.",
+    tags: ["daily", "slang"],
+  },
+  {
+    term: "TBH",
+    definition: "To Be Honest. Thành thực mà nói.",
+    variation: ["Thực lòng"],
+    example: "TBH, tao không thích tính cách của nó.",
+    tags: ["daily", "opinion"],
+  },
+  {
+    term: "BTW",
+    definition: "By The Way. Nhân tiện, tiện thể.",
+    variation: ["Nhân tiện"],
+    example: "BTW, tối nay mày rảnh không?",
+    tags: ["daily"],
+  },
+  {
+    term: "DIY",
+    definition:
+      "Do It Yourself. Tự tay làm lấy (thường là đồ thủ công, sửa chữa).",
+    variation: ["Tự chế"],
+    example: "Thích mày mò làm đồ DIY tặng bạn gái.",
+    tags: ["lifestyle", "hobby"],
+  },
+  {
+    term: "NSFW",
+    definition:
+      "Not Safe For Work. Nội dung không phù hợp để xem ở nơi công cộng/công sở (thường là 18+ hoặc bạo lực).",
+    variation: ["Cấm trẻ em"],
+    example: "Link này NSFW đấy, đừng mở khi có sếp.",
+    tags: ["online", "warning"],
+  },
+  {
+    term: "DM",
+    definition:
+      "Direct Message. Tin nhắn trực tiếp (thường dùng trên Instagram/Twitter).",
+    variation: ["Nhắn riêng"],
+    example: "Check DM đi em ơi.",
+    tags: ["online", "tech"],
+  },
+  {
+    term: "RIP",
+    definition:
+      "Rest In Peace. Yên nghỉ. Giờ hay dùng với nghĩa hài hước cho những pha 'đi vào lòng đất'.",
+    variation: ["R.I.P"],
+    example: "Vừa làm rơi điện thoại xuống nước, RIP.",
+    tags: ["daily", "sad"],
+  },
+  {
+    term: "OFC",
+    definition: "Of Course. Dĩ nhiên rồi, chắc chắn rồi.",
+    variation: ["Tất nhiên"],
+    example: "Đi chơi không? OFC đi chứ!",
+    tags: ["daily", "agree"],
+  },
 ];
