@@ -3167,4 +3167,526 @@ export const TERMS: GenZTerm[] = [
     example: "Body mlem quá làm chị em chảy máu mũi.",
     tags: ["camxuc", "funny"],
   },
+  // =================================================================
+  // CỘNG ĐỒNG LGBT & VĂN HÓA BOYS/GIRLS LOVE
+  // =================================================================
+  {
+    term: "Come out",
+    definition:
+      "Hành động công khai giới tính thật hoặc xu hướng tính dục của bản thân với gia đình/xã hội.",
+    variation: ["Công khai", "Ra khỏi tủ"],
+    example: "Hôm nay tôi quyết định come out với bố mẹ.",
+    tags: ["lgbt", "lifestyle"],
+  },
+  {
+    term: "Đam mỹ",
+    definition:
+      "Thể loại phim/truyện khai thác tình cảm giữa nam và nam (xuất xứ từ Trung Quốc).",
+    variation: ["Boylove", "BL"],
+    example: "Dạo này lọt hố bộ đam mỹ này quá.",
+    tags: ["lgbt", "hobby"],
+  },
+  {
+    term: "Bách hợp",
+    definition: "Thể loại phim/truyện khai thác tình cảm giữa nữ và nữ.",
+    variation: ["Girllove", "GL"],
+    example: "Cặp đôi bách hợp này chemistry đỉnh thật.",
+    tags: ["lgbt", "hobby"],
+  },
+  {
+    term: "Công",
+    definition:
+      "Nhân vật đóng vai trò phái mạnh (người ở trên/Top) trong mối quan hệ nam-nam (thuật ngữ Đam mỹ).",
+    variation: ["Top", "Seme", "Lão công"],
+    example: "Anh ấy chuẩn visual công trong truyền thuyết.",
+    tags: ["lgbt", "bl"],
+  },
+  {
+    term: "Thụ",
+    definition:
+      "Nhân vật đóng vai trò phái yếu (người ở dưới/Bottom) trong mối quan hệ nam-nam.",
+    variation: ["Bot", "Uke", "Bé thụ"],
+    example: "Bé thụ này nhìn cưng xỉu.",
+    tags: ["lgbt", "bl"],
+  },
+  {
+    term: "Cờ lục sắc",
+    definition: "Biểu tượng lá cờ 6 màu của cộng đồng LGBT+.",
+    variation: ["Cờ cầu vồng"],
+    example: "Tháng tự hào (Pride Month) ngập tràn cờ lục sắc.",
+    tags: ["lgbt", "symbol"],
+  },
+  {
+    term: "Bóng kín",
+    definition:
+      "Người đồng tính nam nhưng che giấu, bề ngoài tỏ ra là trai thẳng.",
+    variation: ["Kín"],
+    example: "Trông men thế thôi chứ bóng kín đấy.",
+    tags: ["lgbt", "slang"],
+  },
+  {
+    term: "Bóng lộ",
+    definition: "Người đồng tính nam công khai, thoải mái thể hiện cá tính.",
+    variation: ["Lộ"],
+    example: "Chị ấy bóng lộ mà vui tính lắm.",
+    tags: ["lgbt", "slang"],
+  },
+  {
+    term: "Gei",
+    definition:
+      "Cách viết lái của 'Gay' (Đồng tính nam), thường dùng với sắc thái nhẹ nhàng hoặc trêu đùa.",
+    variation: ["Gay"],
+    example: "Sao nhìn hai thằng đó gei cấn vậy?",
+    tags: ["lgbt", "slang"],
+  },
+  {
+    term: "Les",
+    definition: "Lesbian (Đồng tính nữ).",
+    variation: ["O môi"],
+    example: "Cặp les kia đẹp đôi quá.",
+    tags: ["lgbt", "slang"],
+  },
+  {
+    term: "Trans",
+    definition: "Transgender (Người chuyển giới).",
+    variation: ["Chuyển giới"],
+    example: "Hương Giang là hoa hậu trans đẹp nhất.",
+    tags: ["lgbt", "slang"],
+  },
+
+  // =================================================================
+  // VĂN HÓA TRUNG QUỐC (CBIZ, PHIM ẢNH, NGÔN TÌNH)
+  // =================================================================
+  {
+    term: "Tiểu thịt tươi",
+    definition:
+      "Chỉ các chàng trai trẻ, ngoại hình đẹp, non tơ trong showbiz Trung Quốc (thường diễn xuất chưa tốt).",
+    variation: ["Trai đẹp"],
+    example: "Phim này toàn tiểu thịt tươi nhưng diễn đơ quá.",
+    tags: ["cbiz", "movie"],
+  },
+  {
+    term: "Lưu lượng",
+    definition:
+      "Ngôi sao có lượng fan đông đảo, số liệu tương tác mạng xã hội cực khủng (nhưng chưa chắc có thực lực).",
+    variation: ["Đỉnh lưu"],
+    example: "Cậu ấy là tứ đại lưu lượng mới của Cbiz.",
+    tags: ["cbiz", "fandom"],
+  },
+  {
+    term: "Phong sát",
+    definition:
+      "Lệnh cấm sóng toàn diện, xóa sổ sự nghiệp của nghệ sĩ vì vi phạm pháp luật hoặc đạo đức nghiêm trọng.",
+    variation: ["Cấm sóng"],
+    example: "Sau scandal trốn thuế, cô ấy đã bị phong sát.",
+    tags: ["cbiz", "drama"],
+  },
+  {
+    term: "Ăn dưa",
+    definition:
+      "Hóng chuyện, hóng tin đồn (thường chưa được kiểm chứng) trong giới giải trí.",
+    variation: ["Hóng dưa", "Melon"],
+    example: "Tối nay có dưa bở của đỉnh lưu A, vào hóng mau.",
+    tags: ["cbiz", "slang"],
+  },
+  {
+    term: "Xuyên không",
+    definition:
+      "Thể loại phim/truyện nhân vật đi từ hiện đại về quá khứ hoặc ngược lại.",
+    variation: ["Vượt thời gian"],
+    example: "Mấy bộ xuyên không dạo này kịch bản chán quá.",
+    tags: ["movie", "genre"],
+  },
+  {
+    term: "Cung đấu",
+    definition: "Thể loại phim đấu đá, tranh giành quyền lực trong hậu cung.",
+    variation: ["Hậu cung"],
+    example: "Chân Hoàn Truyện là đỉnh cao cung đấu.",
+    tags: ["movie", "genre"],
+  },
+  {
+    term: "Ngược",
+    definition:
+      "Ngược đãi. Phim/truyện có nội dung nhân vật bị hành hạ về thể xác (ngược thân) hoặc tinh thần (ngược tâm).",
+    variation: ["Ngược tâm"],
+    example: "Xem phim này khóc hết nước mắt, ngược quá.",
+    tags: ["movie", "review"],
+  },
+  {
+    term: "Sủng",
+    definition: "Cưng chiều, yêu thương hết mực (ngược lại với 'Ngược').",
+    variation: ["Ngọt", "Sâu răng"],
+    example: "Thích xem phim sủng ngọt thôi, đời đủ khổ rồi.",
+    tags: ["movie", "review"],
+  },
+  {
+    term: "Hắc hóa",
+    definition:
+      "Nhân vật từ hiền lành chuyển sang độc ác, thủ đoạn sau khi trải qua biến cố.",
+    variation: ["Hóa ác"],
+    example: "Nữ chính sắp hắc hóa trả thù rồi.",
+    tags: ["movie", "review"],
+  },
+  {
+    term: "HE",
+    definition: "Happy Ending. Kết thúc có hậu.",
+    variation: ["Kết đẹp"],
+    example: "Yên tâm, truyện này HE.",
+    tags: ["movie", "ending"],
+  },
+  {
+    term: "SE",
+    definition: "Sad Ending. Kết thúc buồn, bi thảm.",
+    variation: ["Kết thảm"],
+    example: "Đừng xem, SE đấy, ám ảnh lắm.",
+    tags: ["movie", "ending"],
+  },
+  {
+    term: "OE",
+    definition: "Open Ending. Kết thúc mở, tùy người xem suy diễn.",
+    variation: ["Kết mở"],
+    example: "Ghét nhất là OE, chả biết cuối cùng có đến được với nhau không.",
+    tags: ["movie", "ending"],
+  },
+  {
+    term: "Thủy quân",
+    definition:
+      "Đội quân nick ảo được thuê để viết bình luận định hướng dư luận (tương tự Seeding nhưng quy mô lớn hơn ở TQ).",
+    variation: ["Dư luận viên"],
+    example: "Bài này toàn thủy quân vào tâng bốc.",
+    tags: ["cbiz", "online"],
+  },
+
+  // =================================================================
+  // VĂN HÓA HÀN QUỐC (KPOP, K-DRAMA)
+  // =================================================================
+  {
+    term: "Sasaeng fan",
+    definition:
+      "Fan cuồng, chuyên theo dõi, xâm phạm đời tư của thần tượng một cách bệnh hoạn.",
+    variation: ["Fan cuồng"],
+    example: "Sasaeng fan đột nhập vào ký túc xá của idol.",
+    tags: ["kpop", "scary"],
+  },
+  {
+    term: "Stan",
+    definition:
+      "Fan cứng, hâm mộ và ủng hộ hết mình cho một nhóm/người nào đó (Bắt nguồn từ bài hát của Eminem).",
+    variation: ["Fan ruột"],
+    example: "Tao stan nhóm này từ hồi mới debut.",
+    tags: ["kpop", "fandom"],
+  },
+  {
+    term: "Bias Wrecker",
+    definition:
+      "Thành viên trong nhóm nhạc khiến bạn xao xuyến, lăm le 'đập tan' vị trí của thành viên bạn thích nhất (Bias).",
+    variation: ["Kẻ hủy diệt bias"],
+    example: "Jungkook là bias nhưng V là bias wrecker của tao.",
+    tags: ["kpop", "fandom"],
+  },
+  {
+    term: "Skinship",
+    definition:
+      "Những cử chỉ tiếp xúc thân mật (nắm tay, ôm, khoác vai) giữa các thành viên hoặc cặp đôi.",
+    variation: ["Thân mật"],
+    example: "Hai ông này skinship tự nhiên ghê.",
+    tags: ["kpop", "action"],
+  },
+  {
+    term: "Lightstick",
+    definition:
+      "Gậy phát sáng có logo/màu sắc riêng của từng fandom, dùng để cổ vũ trong concert.",
+    variation: ["Búa"],
+    example: "Biển lightstick trong concert nhìn nổi da gà.",
+    tags: ["kpop", "item"],
+  },
+  {
+    term: "All-kill",
+    definition:
+      "Thành tích khi một bài hát đứng đầu tất cả các bảng xếp hạng âm nhạc uy tín tại Hàn Quốc.",
+    variation: ["PAK"],
+    example: "Bài hát mới đạt Perfect All-kill chỉ sau 2 giờ.",
+    tags: ["kpop", "rank"],
+  },
+  {
+    term: "Ending Fairy",
+    definition:
+      "Tiên tử kết màn. Thành viên được camera quay cận mặt ở cuối màn trình diễn với biểu cảm thần thánh.",
+    variation: ["Kết màn"],
+    example: "Pha ending fairy thở gấp huyền thoại.",
+    tags: ["kpop", "stage"],
+  },
+  {
+    term: "Oppa",
+    definition:
+      "Anh trai/Anh yêu (tiếng Hàn). Từ quốc dân fan nữ dùng gọi idol nam.",
+    variation: ["Các anh"],
+    example: "Oppa của em mãi đỉnh.",
+    tags: ["kpop", "xungho"],
+  },
+  {
+    term: "Unnie",
+    definition: "Chị gái (tiếng Hàn). Fan nữ dùng gọi idol nữ.",
+    variation: ["Chị đẹp"],
+    example: "Mấy chị unnie nhóm này ngầu quá.",
+    tags: ["kpop", "xungho"],
+  },
+  {
+    term: "Dispatch",
+    definition:
+      "Trang báo săn tin hẹn hò khét tiếng của Hàn Quốc. Nỗi khiếp sợ của idol ngày 1/1 hàng năm.",
+    variation: ["Hung thần"],
+    example: "Sáng nay Dispatch khui tin hẹn hò của ai vậy?",
+    tags: ["kpop", "news"],
+  },
+
+  // =================================================================
+  // VĂN HÓA THÁI LAN (T-BIZ, SERIES)
+  // =================================================================
+  {
+    term: "Fan service",
+    definition:
+      "Những hành động chiều chuộng, tương tác thân mật (đôi khi là diễn) của các cặp đôi để làm vui lòng fan.",
+    variation: ["Phục vụ fan"],
+    example: "Cặp này fan service tốt, nhưng đừng tin là thật.",
+    tags: ["tbiz", "action"],
+  },
+  {
+    term: "Pí",
+    definition:
+      "P' (Phiên âm tiếng Thái). Cách gọi kính trọng 'Anh/Chị' đi kèm tên (VD: P'Freen, P'Mew).",
+    variation: ["Anh/Chị"],
+    example: "Pí ơi, em u mê pí quá.",
+    tags: ["tbiz", "xungho"],
+  },
+  {
+    term: "Nong",
+    definition:
+      "Em (tiếng Thái). Cách gọi thân mật dành cho người nhỏ tuổi hơn.",
+    variation: ["Bé"],
+    example: "Nong Nattawin cười xinh xỉu.",
+    tags: ["tbiz", "xungho"],
+  },
+  {
+    term: "Tình tay ba",
+    definition:
+      "Đặc sản của phim truyền hình Thái Lan với các mối quan hệ chằng chịt, drama và đánh ghen.",
+    variation: ["Tam giác tình yêu"],
+    example: "Phim Thái mà không có tình tay ba, đánh ghen thì mất chất.",
+    tags: ["tbiz", "drama"],
+  },
+  {
+    term: "Couple màn ảnh",
+    definition:
+      "Cặp đôi được ghép cặp trong phim (Koo-jin), thường được fan đẩy thuyền nhiệt tình ngoài đời.",
+    variation: ["Koo-jin"],
+    example: "Đây là couple màn ảnh hot nhất Thái Lan hiện nay.",
+    tags: ["tbiz", "couple"],
+  },
+
+  // =================================================================
+  // NHÓM: NHÂN VẬT & TÍNH CÁCH (CHARACTER TROPES)
+  // =================================================================
+  {
+    term: "Tổng tài",
+    definition:
+      "Tổng giám đốc bên ngoài lạnh lùng, bên trong nhiều tiền. Nhân vật nam chính điển hình, thường mắc bệnh sạch sẽ và bá đạo.",
+    variation: ["CEO", "Chủ tịch"],
+    example: "Mô típ tổng tài bá đạo yêu nhân viên quèn xưa rồi.",
+    tags: ["ngontinh", "character"],
+  },
+  {
+    term: "Ngốc bạch ngọt",
+    definition:
+      "Nữ chính ngây thơ (ngốc), trắng trẻo (bạch), ngọt ngào (ngọt). Thường vụng về nhưng luôn gặp may mắn và được nam chính yêu.",
+    variation: ["Thỏ trắng"],
+    example: "Nữ chính ngốc bạch ngọt xem phát bực.",
+    tags: ["ngontinh", "character"],
+  },
+  {
+    term: "Nữ cường",
+    definition:
+      "Nữ chính mạnh mẽ, độc lập, thông minh, không dựa dẫm vào đàn ông (ngược lại với Bánh bèo/Ngốc bạch ngọt).",
+    variation: ["Chị đại"],
+    example: "Thích đọc truyện nữ cường, tự làm tự ăn.",
+    tags: ["ngontinh", "character"],
+  },
+  {
+    term: "Nam phụ thâm tình",
+    definition:
+      "Chàng trai tốt bụng, yêu nữ chính hết lòng, hy sinh tất cả nhưng cuối cùng vẫn không có được cô ấy.",
+    variation: ["Nam 8"],
+    example: "Nam chính là của nữ chính, còn nam phụ là của khán giả.",
+    tags: ["ngontinh", "character"],
+  },
+  {
+    term: "Trà xanh",
+    definition:
+      "Cô gái vẻ ngoài thanh thuần, ngây thơ nhưng nội tâm đầy toan tính, chuyên phá hoại hạnh phúc người khác (đã có ở phần trước, nhắc lại vì rất phổ biến trong ngôn tình).",
+    variation: ["Green tea"],
+    example: "Cẩn thận chiêu trò của mấy em trà xanh.",
+    tags: ["ngontinh", "villain"],
+  },
+  {
+    term: "Bạch liên hoa",
+    definition:
+      "Nhân vật (thường là nữ phụ) giả vờ yếu đuối, vô tội như hoa sen trắng để đóng vai nạn nhân.",
+    variation: ["Hoa sen trắng"],
+    example: "Nhìn mặt bạch liên hoa là biết sắp có biến.",
+    tags: ["ngontinh", "villain"],
+  },
+  {
+    term: "Tiểu tam",
+    definition: "Người thứ ba xen vào mối quan hệ.",
+    variation: ["Con giáp thứ 13"],
+    example: "Tiểu tam bây giờ lộng hành quá.",
+    tags: ["ngontinh", "villain"],
+  },
+
+  // =================================================================
+  // NHÓM: CỐT TRUYỆN & MÔ TÍP (PLOT TROPES)
+  // =================================================================
+  {
+    term: "Hào môn",
+    definition:
+      "Gia đình quyền quý, giàu có nứt đố đổ vách. Truyện hào môn thường xoay quanh tranh giành tài sản hoặc mẹ chồng nàng dâu.",
+    variation: ["Nhà giàu"],
+    example: "Sóng gió hào môn xem cuốn thực sự.",
+    tags: ["ngontinh", "genre"],
+  },
+  {
+    term: "Cưới trước yêu sau",
+    definition:
+      "Mô típ hai người kết hôn vì hợp đồng/lợi ích/ép buộc, sau đó mới nảy sinh tình cảm.",
+    variation: ["Hợp đồng hôn nhân"],
+    example: "Phim này theo mô típ cưới trước yêu sau kinh điển.",
+    tags: ["ngontinh", "genre"],
+  },
+  {
+    term: "Thanh mai trúc mã",
+    definition:
+      "Hai người bạn lớn lên cùng nhau từ nhỏ, hiểu rõ về nhau và thường phát triển thành tình yêu.",
+    variation: ["Bạn thanh mai"],
+    example: "Ước gì có anh người yêu là thanh mai trúc mã.",
+    tags: ["ngontinh", "genre"],
+  },
+  {
+    term: "Thanh xuân vườn trường",
+    definition:
+      "Truyện/Phim lấy bối cảnh học đường, tình yêu tuổi học trò trong sáng, ngây ngô.",
+    variation: ["Học đường"],
+    example: "Phim thanh xuân vườn trường Trung Quốc bao giờ cũng hay.",
+    tags: ["ngontinh", "genre"],
+  },
+  {
+    term: "Truy thê",
+    definition:
+      "Hành trình nam chính theo đuổi lại vợ/người yêu sau khi đã làm cô ấy tổn thương bỏ đi (Truy thê hỏa táng tràng - Theo đuổi vợ sấp mặt).",
+    variation: ["Níu kéo"],
+    example: "Ngược cho lắm vào rồi giờ truy thê thấy mồ.",
+    tags: ["ngontinh", "plot"],
+  },
+  {
+    term: "Gương vỡ lại lành",
+    definition: "Các cặp đôi chia tay hoặc ly hôn rồi quay lại với nhau.",
+    variation: ["Tái hợp"],
+    example: "Tao không tin vào gương vỡ lại lành, vỡ là vứt.",
+    tags: ["ngontinh", "plot"],
+  },
+  {
+    term: "Thế thân",
+    definition:
+      "Nhân vật bị coi là người thay thế cho người yêu cũ/người trong mộng của nam/nữ chính (vì ngoại hình giống).",
+    variation: ["Người thay thế"],
+    example: "Nữ chính phát hiện mình chỉ là thế thân của chị gái.",
+    tags: ["ngontinh", "drama"],
+  },
+  {
+    term: "Trọng sinh",
+    definition:
+      "Nhân vật chết đi sống lại, quay về quá khứ hoặc nhập vào cơ thể người khác để làm lại cuộc đời.",
+    variation: ["Hồi sinh"],
+    example: "Truyện trọng sinh báo thù đọc sướng lắm.",
+    tags: ["ngontinh", "genre"],
+  },
+  {
+    term: "Xuyên nhanh",
+    definition:
+      "Nhân vật chính đi xuyên qua nhiều thế giới khác nhau để hoàn thành nhiệm vụ.",
+    variation: ["Mau xuyên"],
+    example: "Bộ xuyên nhanh này đi qua 10 thế giới rồi.",
+    tags: ["ngontinh", "genre"],
+  },
+  {
+    term: "Điền văn",
+    definition:
+      "Truyện nhẹ nhàng, kể về cuộc sống hàng ngày, làm ruộng, chăn nuôi, không nhiều drama kịch tính.",
+    variation: ["Làm ruộng"],
+    example: "Đọc điền văn cho thư thái đầu óc.",
+    tags: ["ngontinh", "genre"],
+  },
+  {
+    term: "Vả mặt",
+    definition:
+      "Hành động nhân vật chính chứng minh năng lực, đáp trả cực gắt khiến những kẻ coi thường mình phải bẽ mặt.",
+    variation: ["Phản đòn"],
+    example: "Pha vả mặt trà xanh đi vào lòng người.",
+    tags: ["ngontinh", "action"],
+  },
+  {
+    term: "Sảng văn",
+    definition:
+      "Truyện có nội dung khiến người đọc cảm thấy sảng khoái, nhân vật chính cực mạnh, đánh đâu thắng đó, ít gặp trắc trở.",
+    variation: ["Bá đạo"],
+    example: "Dạo này chỉ thích đọc sảng văn cho đỡ stress.",
+    tags: ["ngontinh", "genre"],
+  },
+  {
+    term: "Bàn tay vàng",
+    definition:
+      "Năng lực đặc biệt, may mắn vô lý hoặc sự ưu ái quá mức của tác giả dành cho nhân vật chính.",
+    variation: ["Buff bẩn"],
+    example: "Tác giả buff bàn tay vàng cho main lố quá.",
+    tags: ["ngontinh", "feature"],
+  },
+  {
+    term: "Cường thủ hào đoạt",
+    definition:
+      "Nam chính dùng quyền lực, sức mạnh để ép buộc nữ chính ở bên mình (chiếm đoạt).",
+    variation: ["Chiếm đoạt"],
+    example: "Mấy truyện cường thủ hào đoạt giờ đọc thấy toxic.",
+    tags: ["ngontinh", "genre"],
+  },
+  {
+    term: "Oan gia",
+    definition:
+      "Hai người ghét nhau, hay cãi nhau nhưng cuối cùng lại yêu nhau (Oan gia ngõ hẹp).",
+    variation: ["Ghét của nào trời trao của ấy"],
+    example: "Cặp này đúng kiểu oan gia ngõ hẹp.",
+    tags: ["ngontinh", "genre"],
+  },
+  {
+    term: "Hệ thống",
+    definition:
+      "Một chương trình ảo đi theo nhân vật chính (thường trong truyện xuyên không/trọng sinh) để giao nhiệm vụ và tặng vật phẩm.",
+    variation: ["System"],
+    example: "Hệ thống bắt nữ chính phải quyến rũ nam chính.",
+    tags: ["ngontinh", "feature"],
+  },
+  {
+    term: "Sắc",
+    definition:
+      "Truyện có nhiều cảnh nóng, mô tả chi tiết quan hệ tình dục (H, Cao H).",
+    variation: ["Thịt", "H văn"],
+    example: "Bộ này là truyện sắc, cẩn thận khi đọc nơi công cộng.",
+    tags: ["ngontinh", "adult"],
+  },
+  {
+    term: "Thanh thủy văn",
+    definition:
+      "Truyện trong sáng, hoàn toàn không có cảnh nóng (nước trong veo).",
+    variation: ["Trong sáng"],
+    example: "Tưởng có thịt ai ngờ là thanh thủy văn.",
+    tags: ["ngontinh", "genre"],
+  },
 ];
