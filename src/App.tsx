@@ -21,11 +21,12 @@ const App: React.FC = () => {
   const [currentPage, setCurrentPage] = useState(1);
   const [pageSize, setPageSize] = useState(5);
 
+  // LOGIC UPDATE: Filter first, then Sort alphabetically using Vietnamese locale
   const filteredData = TERMS.filter(
     (item: GenZTerm) =>
       item.term.toLowerCase().includes(searchText.toLowerCase()) ||
       item.definition.toLowerCase().includes(searchText.toLowerCase())
-  );
+  ).sort((a, b) => a.term.localeCompare(b.term, "vi"));
 
   const handleSearch = (e: React.ChangeEvent<HTMLInputElement>) => {
     setSearchText(e.target.value);
