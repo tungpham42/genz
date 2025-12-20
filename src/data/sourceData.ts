@@ -3837,4 +3837,311 @@ export const TERMS: GenZTerm[] = [
     example: "Em nà, nhớ em hông?",
     tags: ["teencode", "daily"],
   },
+  // =================================================================
+  // NHÓM: BIỂU CẢM & TỪ ĐỆM (EMOTICONS & FILLERS)
+  // =================================================================
+  {
+    term: "Hjhj",
+    definition:
+      "Điệu cười huyền thoại thời Yahoo/Blog 360, thường đi kèm icon ^^. Dùng để cười duyên, cười trừ hoặc... cười giả trân.",
+    variation: ["Hihi", "Hí hí"],
+    example: "Hjhj, bạn nói gì mình hổng hỉu ^^.",
+    tags: ["teencode", "daily"],
+  },
+  {
+    term: "Kk",
+    definition:
+      "Kaka/Kiki. Điệu cười ngắn gọn, nhanh chóng, thường dùng khi thấy cái gì đó buồn cười nhẹ.",
+    variation: ["Ka ka"],
+    example: "Nhìn mặt nó hài xỉu kk.",
+    tags: ["teencode", "daily"],
+  },
+  {
+    term: "Oki",
+    definition:
+      "Ok. Cách nói đồng ý tạo cảm giác dễ thương, thân thiện hơn là 'Ok' cộc lốc.",
+    variation: ["Okei", "Okie", "Oce"],
+    example: "Oki, chốt kèo nha.",
+    tags: ["teencode", "daily"],
+  },
+  {
+    term: "Uhm",
+    definition:
+      "Ừm. Dùng để đồng ý, xác nhận hoặc đang suy nghĩ chưa biết nói gì.",
+    variation: ["Umm", "Ừm"],
+    example: "Uhm, để tao tính đã.",
+    tags: ["teencode", "daily"],
+  },
+  {
+    term: "Ohm",
+    definition: "Biến thể của 'Uhm', thường dùng để đồng ý một cách nhẹ nhàng.",
+    variation: ["Ôm"],
+    example: "Ohm, mai gặp nhé.",
+    tags: ["teencode", "daily"],
+  },
+  {
+    term: "Ah",
+    definition:
+      "À/Á. Dùng cuối câu để nhấn mạnh, hỏi lại hoặc thốt lên khi vỡ lẽ ra điều gì đó.",
+    variation: ["Ak"],
+    example: "Ủa vậy ah? Giờ mới biết luôn.",
+    tags: ["teencode", "daily"],
+  },
+  {
+    term: "Oh",
+    definition: "Ồ. Tỏ vẻ ngạc nhiên hoặc đã hiểu vấn đề.",
+    variation: ["Ồ"],
+    example: "Oh, hóa ra là thế.",
+    tags: ["teencode", "daily"],
+  },
+  {
+    term: "Hihi",
+    definition:
+      "Tiếng cười nhẹ nhàng, e thẹn, hoặc đôi khi mang sắc thái... nguy hiểm/cà khịa ngầm.",
+    variation: ["Hí hí"],
+    example: "Em lỡ tay làm vỡ cái bình rồi hihi.",
+    tags: ["teencode", "daily"],
+  },
+  {
+    term: "Haha",
+    definition:
+      "Tiếng cười lớn, sảng khoái. Đôi khi dùng 'Haha' để reaction cho đỡ nhạt dù không buồn cười lắm.",
+    variation: ["Hahaha"],
+    example: "Truyện cười nhạt thế mà nó cũng haha được.",
+    tags: ["teencode", "daily"],
+  },
+  {
+    term: "Hehe",
+    definition: "Cười ranh mãnh, cười trừ hoặc tỏ vẻ tinh nghịch.",
+    variation: ["Hè hè"],
+    example: "Mượn 50k nhé hehe.",
+    tags: ["teencode", "daily"],
+  },
+  {
+    term: "Huhu",
+    definition:
+      "Tiếng khóc. Thường dùng để làm nũng, than thở hoặc giả vờ khóc.",
+    variation: ["Hu hu"],
+    example: "Huhu, mai thi rồi mà chưa học chữ nào.",
+    tags: ["teencode", "daily"],
+  },
+  {
+    term: "Hic",
+    definition: "Tiếng nấc. Biểu thị sự buồn bã nhẹ nhàng hoặc tiếc nuối.",
+    variation: ["Hix"],
+    example: "Hic, lại hết tiền rồi.",
+    tags: ["teencode", "daily"],
+  },
+  {
+    term: "Hả",
+    definition:
+      "Hỏi lại khi không nghe rõ, hoặc tỏ vẻ cực kỳ ngạc nhiên (Hả???).",
+    variation: ["Hả gi"],
+    example: "Hả? Mày nói cái gì cơ?",
+    tags: ["teencode", "daily"],
+  },
+  {
+    term: "Uis",
+    definition: "Úi/Ui. Thốt lên khi bất ngờ hoặc đau.",
+    variation: ["Ui chà"],
+    example: "Uis, đau bụng quá.",
+    tags: ["teencode", "camthan"],
+  },
+  {
+    term: "Keke",
+    definition: "Điệu cười đắc chí, tỏ vẻ khoái trá.",
+    variation: ["Ke ke"],
+    example: "Thắng rồi keke.",
+    tags: ["teencode", "daily"],
+  },
+  {
+    term: "Hoho",
+    definition: "Cười hô hố. Cười lớn tiếng, hơi thô.",
+    variation: ["Hô hô"],
+    example: "Cười hoho như được mùa.",
+    tags: ["teencode", "daily"],
+  },
+  {
+    term: "Hem",
+    definition: "Không. Một cách nói khác của 'Hông/Khum/Ko', nghe nũng nịu.",
+    variation: ["Hông", "Hem chịu"],
+    example: "Hem chịu đâu.",
+    tags: ["teencode", "daily"],
+  },
+  {
+    term: "Hoy",
+    definition: "Thôi. (Thôi đi -> Hoy đi).",
+    variation: ["Thôi"],
+    example: "Hoy đi nha, đừng có xạo.",
+    tags: ["teencode", "daily"],
+  },
+  {
+    term: "Típ",
+    definition: "Tiếp. (Tiếp tục -> Típ tục).",
+    variation: ["Tiếp"],
+    example: "Kể típ đi, đang hay.",
+    tags: ["teencode", "daily"],
+  },
+  {
+    term: "Pít",
+    definition: "Biết. (Biết đâu -> Pít đâu). Viết sai chính tả kiểu cố ý.",
+    variation: ["Biết"],
+    example: "Ai pít gì đâu.",
+    tags: ["teencode", "daily"],
+  },
+  // =================================================================
+  // NHÓM: CẢM THÁN & TÍNH TỪ CẢM XÚC (LEVEL MAX)
+  // =================================================================
+  {
+    term: "Cưng xỉu",
+    definition: "Quá dễ thương, đáng yêu đến mức nhìn vào muốn ngất đi.",
+    variation: ["Cưng quá", "Cute xỉu"],
+    example: "Em mèo nhà ai mà cưng xỉu vậy nè.",
+    tags: ["khen", "camthan"],
+  },
+  {
+    term: "Cười ẻ",
+    definition:
+      "Cười đau bụng, cười không kiểm soát được (từ lóng hơi thô nhưng cực phổ biến để chỉ sự hài hước tột độ).",
+    variation: ["Cười ỉa", "Hài vãi"],
+    example: "Đọc cái comment này mà tao cười ẻ.",
+    tags: ["haihuoc", "slang"],
+  },
+  {
+    term: "Hài xỉu",
+    definition: "Rất buồn cười, hài hước đến mức muốn xỉu.",
+    variation: ["Hài hước"],
+    example: "Clip này hài xỉu, xem đi xem lại vẫn cười.",
+    tags: ["haihuoc", "khen"],
+  },
+  {
+    term: "Hixhix",
+    definition:
+      "Tiếng khóc thút thít, tỏ vẻ yếu đuối hoặc làm nũng (phiên bản 'nhõng nhẽo' hơn của Hic/Huhu).",
+    variation: ["Hix"],
+    example: "Hixhix, anh đừng mắng em nữa.",
+    tags: ["teencode", "daily"],
+  },
+  {
+    term: "Cười bò",
+    definition:
+      "Cười ngả nghiêng, cười đến mức không đứng vững được phải bò ra đất.",
+    variation: ["Cười lăn lộn"],
+    example: "Nghe nó kể chuyện mà cả đám cười bò.",
+    tags: ["haihuoc", "action"],
+  },
+  {
+    term: "Cười té ghế",
+    definition: "Cười giật mình hoặc quá mạnh khiến ngã cả khỏi ghế.",
+    variation: ["Cười ngất"],
+    example: "Pha tấu hài đi vào lòng đất khiến tao cười té ghế.",
+    tags: ["haihuoc", "action"],
+  },
+  {
+    term: "Cười nội thương",
+    definition:
+      "Cười đau ruột gan nhưng phải kìm nén không dám cười to (thường là trong giờ học hoặc họp).",
+    variation: ["Nhịn cười"],
+    example: "Đang họp mà nhớ lại chuyện đó làm tao cười nội thương.",
+    tags: ["haihuoc", "state"],
+  },
+  {
+    term: "Haizz",
+    definition: "Tiếng thở dài ngao ngán, mệt mỏi hoặc thất vọng.",
+    variation: ["Hazz", "Haiz"],
+    example: "Haizz, lại một ngày nữa trôi qua vô nghĩa.",
+    tags: ["teencode", "sad"],
+  },
+  {
+    term: "Ec ec",
+    definition:
+      "Tiếng kêu biểu thị sự bó tay, ngạc nhiên hoặc không biết nói gì (kiểu 'Ặc ặc').",
+    variation: ["Ặc ặc"],
+    example: "Ec ec, sao lại làm thế?",
+    tags: ["teencode", "camthan"],
+  },
+  {
+    term: "Hự",
+    definition:
+      "Tiếng kêu khi bị 'sát thương' tim (thường do thính độc hoặc sự phũ phàng).",
+    variation: ["Á hự"],
+    example: "Crush cười với tao một cái, hự, tim tao đau quá.",
+    tags: ["teencode", "reaction"],
+  },
+  {
+    term: "Oa oa",
+    definition: "Tiếng khóc to như em bé, thường dùng để ăn vạ.",
+    variation: ["Oe oe"],
+    example: "Oa oa, trả dép cho tui.",
+    tags: ["teencode", "daily"],
+  },
+  {
+    term: "Xỉu ngang xỉu dọc",
+    definition: "Ngất lên ngất xuống vì quá sốc, quá mệt hoặc quá thích thú.",
+    variation: ["Xỉu up xỉu down"],
+    example: "Thấy điểm thi xong tao xỉu ngang xỉu dọc.",
+    tags: ["camthan", "state"],
+  },
+  {
+    term: "Khóc thét",
+    definition:
+      "Sợ hãi tột độ hoặc gặp tình huống quá khó đỡ khiến muốn hét lên.",
+    variation: ["Khóc ròng"],
+    example: "Nhìn đống deadline mà muốn khóc thét.",
+    tags: ["camthan", "fear"],
+  },
+  {
+    term: "Khóc tiếng mán",
+    definition:
+      "Gặp rắc rối lớn, bế tắc không biết giải quyết sao (tiếng lóng cũ nhưng vẫn dùng).",
+    variation: ["Khóc tiếng Miên"],
+    example: "Vụ này mà vỡ lở là khóc tiếng mán luôn.",
+    tags: ["slang", "fail"],
+  },
+  {
+    term: "Cạn lời",
+    definition:
+      "Bất lực, không còn gì để nói trước sự ngớ ngẩn hoặc vô lý của ai đó.",
+    variation: ["Sa mạc lời", "Hết nói nổi"],
+    example: "Nhìn cách nó đỗ xe mà tao cạn lời.",
+    tags: ["camthan", "thất vọng"],
+  },
+  {
+    term: "Bất ngờ chưa",
+    definition:
+      "Câu nói viral (Bất ngờ chưa bà già), dùng khi tạo sự ngạc nhiên (thường là troll).",
+    variation: ["Ngạc nhiên chưa"],
+    example: "Tưởng tao quên sinh nhật mày hả? Bất ngờ chưa?",
+    tags: ["meme", "funny"],
+  },
+  {
+    term: "Ối dồi ôi",
+    definition:
+      "Câu cảm thán cửa miệng (đặc trưng miền Bắc) khi gặp chuyện sốc, đau hoặc than vãn.",
+    variation: ["Ối giời ơi"],
+    example: "Ối dồi ôi, sao lại đắt thế này?",
+    tags: ["camthan", "daily"],
+  },
+  {
+    term: "Mèn đét ơi",
+    definition:
+      "Trời đất ơi. Câu cảm thán đặc trưng miền Tây, thể hiện sự ngạc nhiên hoặc than phiền.",
+    variation: ["Trời đất ơi"],
+    example: "Mèn đét ơi, con cái nhà ai mà xinh dữ thần.",
+    tags: ["camthan", "dialect"],
+  },
+  {
+    term: "Xịn xò",
+    definition: "Khen ngợi đồ vật/dịch vụ chất lượng cao, sang chảnh.",
+    variation: ["Xịn"],
+    example: "Cái túi này nhìn xịn xò đấy.",
+    tags: ["khen", "shopping"],
+  },
+  {
+    term: "Chất lừ",
+    definition: "Rất ngầu, rất phong cách, cá tính.",
+    variation: ["Chất"],
+    example: "Quả tóc mới cắt nhìn chất lừ.",
+    tags: ["khen", "style"],
+  },
 ];
