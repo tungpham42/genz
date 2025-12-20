@@ -4144,4 +4144,192 @@ export const TERMS: GenZTerm[] = [
     example: "Quả tóc mới cắt nhìn chất lừ.",
     tags: ["khen", "style"],
   },
+
+  // =================================================================
+  // CỤM TỪ DÀI & CÂU NÓI VIRAL (LONG PHRASES & TRENDING)
+  // =================================================================
+  {
+    term: "Đỉnh nóc kịch trần bay phấp phới",
+    definition:
+      "Câu nói viral của Madame Vịt, mô tả trạng thái hưng phấn, vui vẻ tột độ hoặc một sự việc quá tuyệt vời, không còn gì để chê.",
+    variation: ["Đỉnh nóc", "Kịch trần"],
+    example: "Nhạc lên là anh em mình đỉnh nóc kịch trần bay phấp phới.",
+    tags: ["trend", "meme", "party"],
+  },
+  {
+    term: "Ăn nói xà lơ",
+    definition:
+      "Nói năng linh tinh, sai sự thật hoặc nói những điều không đúng lúc đúng chỗ (biến âm của 'Sai lơ').",
+    variation: ["Xà lơ"],
+    example: "Bé này ăn nói xà lơ quá, ai dạy em nói thế?",
+    tags: ["meme", "funny"],
+  },
+  {
+    term: "Gia trưởng mới lo được cho em",
+    definition:
+      "Quan điểm gây tranh cãi nhưng trở thành meme: Chấp nhận người yêu khó tính/kiểm soát (gia trưởng) miễn là họ có kinh tế vững vàng.",
+    variation: ["Gia trưởng"],
+    example: "Gu của tao là gia trưởng mới lo được cho em.",
+    tags: ["trend", "love", "money"],
+  },
+  {
+    term: "Nghệ cả củ",
+    definition:
+      "Rất nghệ thuật, điêu luyện hoặc đẹp mắt (Củ Nghệ -> Nghệ). Khen ngợi ai đó làm gì rất khéo.",
+    variation: ["Nghệ"],
+    example: "Pha xử lý bóng này đúng là nghệ cả củ.",
+    tags: ["khen", "skill"],
+  },
+  {
+    term: "Cất gọn poster vào góc",
+    definition:
+      "Hành động của fan khi thất vọng tột độ về thần tượng (vì scandal hoặc hẹn hò), quyết định ngừng hâm mộ.",
+    variation: ["Cất poster"],
+    example: "Sau vụ này chắc khối fan cất gọn poster vào góc.",
+    tags: ["kpop", "meme"],
+  },
+  {
+    term: "Thời tới cản không kịp",
+    definition:
+      "Sự may mắn hoặc thành công ập đến liên tiếp, không thể ngăn cản được.",
+    variation: ["Thời tới"],
+    example:
+      "Nó trúng số lại còn được thăng chức, đúng là thời tới cản không kịp.",
+    tags: ["lucky", "daily"],
+  },
+  {
+    term: "Nhảy số nhanh",
+    definition:
+      "Đầu óc nhanh nhạy, thông minh, hiểu ý hoặc tính toán cực lẹ trong mọi tình huống.",
+    variation: ["Nảy số"],
+    example: "Thằng này nhảy số nhanh đấy, mới gợi ý đã hiểu rồi.",
+    tags: ["khen", "skill"],
+  },
+  {
+    term: "Tâm bất biến giữa dòng đời vạn biến",
+    definition:
+      "Giữ vững lập trường, bình tĩnh mặc kệ mọi thứ xung quanh đang hỗn loạn (thường dùng ảnh chế tượng Phật hoặc người đang ngồi thiền).",
+    variation: ["Tâm bất biến"],
+    example:
+      "Deadline dí, sếp mắng, nhưng tôi vẫn tâm bất biến giữa dòng đời vạn biến.",
+    tags: ["meme", "lifestyle"],
+  },
+  {
+    term: "Quan trọng là thần thái",
+    definition:
+      "Không cần biết đẹp xấu hay đúng sai, quan trọng là biểu cảm và khí chất phải tự tin.",
+    variation: ["Thần thái"],
+    example: "Hát hay không bằng hay hát, quan trọng là thần thái.",
+    tags: ["meme", "old-but-gold"],
+  },
+  {
+    term: "Nhà bao việc",
+    definition:
+      "Câu nói từ phim 'Mê Cung', dùng để từ chối làm việc gì đó vì đang rất bận (hoặc giả vờ bận).",
+    variation: ["Bận lắm"],
+    example: "Yêu đương gì tầm này, nhà bao việc.",
+    tags: ["meme", "daily"],
+  },
+  {
+    term: "Cục xì lầu ông bê lắp",
+    definition:
+      "Lời bài hát vô nghĩa (phiên âm từ 'Don't you know, pump it up') từng gây bão TikTok.",
+    variation: ["Pump it up"],
+    example: "Đang ngồi im thì nhạc nổi lên: Cục xì lầu ông bê lắp...",
+    tags: ["meme", "music"],
+  },
+  {
+    term: "Thao túng tâm lý",
+    definition:
+      "Dùng lời nói/hành động để điều khiển suy nghĩ của người khác (Gaslighting), nhưng Gen Z dùng với nghĩa hài hước khi bị ai đó dụ dỗ.",
+    variation: ["Thao túng"],
+    example: "Mày đừng có thao túng tâm lý tao mua cái váy này nữa.",
+    tags: ["psychology", "funny"],
+  },
+  {
+    term: "Tình nghĩa anh em chắc có bền lâu",
+    definition:
+      "Câu nói mỉa mai những mối quan hệ bạn bè bề ngoài thì thân thiết nhưng khi gặp hoạn nạn thì biến mất.",
+    variation: ["Tình anh em"],
+    example: "Mượn tiền không trả, tình nghĩa anh em chắc có bền lâu.",
+    tags: ["meme", "friend"],
+  },
+  {
+    term: "Chịu thì chịu không chịu thì chịu",
+    definition:
+      "Bắt buộc phải chấp nhận, không có sự lựa chọn nào khác (thái độ ngang ngược, hài hước).",
+    variation: ["Ep buộc"],
+    example: "Luật chơi là thế, chịu thì chịu không chịu thì chịu.",
+    tags: ["meme", "attitude"],
+  },
+  {
+    term: "Over hợp",
+    definition: "Rất hợp, hợp nhau một cách quá mức (Over).",
+    variation: ["Hợp cạ"],
+    example: "Tao với nó nói chuyện thấy over hợp luôn.",
+    tags: ["khen", "tinhyeu"],
+  },
+  {
+    term: "Flex đến hơi thở cuối cùng",
+    definition:
+      "Khoe khoang mọi lúc mọi nơi, tận dụng mọi cơ hội để khoe thành tích.",
+    variation: ["Flexing"],
+    example: "Vào group này toàn các cao thủ flex đến hơi thở cuối cùng.",
+    tags: ["trend", "khoe"],
+  },
+  {
+    term: "Một nụ cười luôn hé",
+    definition:
+      "Lời bài hát thiếu nhi nhưng dùng để chỉ nụ cười gượng gạo, cười trong đau khổ hoặc cười nguy hiểm.",
+    variation: ["Thế giới vẫn quay"],
+    example: "Sếp giao việc lúc 5h chiều, một nụ cười luôn hé...",
+    tags: ["meme", "sad"],
+  },
+  {
+    term: "Bật chế độ bay lên",
+    definition:
+      "Vui vẻ, quẩy hết mình hoặc tưng tửng, không quan tâm sự đời (Lời bài hát 'Hey người anh em').",
+    variation: ["Bay lên"],
+    example: "Cuối tuần rồi, bật chế độ bay lên thôi.",
+    tags: ["party", "music"],
+  },
+  {
+    term: "Mãi mận mãi keo chảy nước miếng",
+    definition:
+      "Phiên bản nâng cấp dài hơn của 'Mãi mận mãi keo' (Mãi mặn mà, mãi gắn kết), thêm 'chảy nước miếng' (thèm thuồng/ngon nghẻ).",
+    variation: ["Mãi keo"],
+    example: "Hội chị em mình mãi mận mãi keo chảy nước miếng nha.",
+    tags: ["khen", "friend"],
+  },
+  {
+    term: "Kiếp nạn thứ 82",
+    definition:
+      "Sự cố, xui xẻo bất ngờ (thường ám chỉ Tây Du Ký có 81 kiếp nạn, đây là kiếp nạn phát sinh thêm).",
+    variation: ["Kiếp nạn"],
+    example: "Đi làm quên mang laptop, đúng là kiếp nạn thứ 82.",
+    tags: ["funny", "xui"],
+  },
+  {
+    term: "Bất ngờ chưa bà già",
+    definition:
+      "Câu cửa miệng dùng để tạo sự ngạc nhiên cho đối phương (thường là trêu chọc hoặc 'úp sọt' bất ngờ).",
+    variation: ["Ngạc nhiên chưa"],
+    example: "Tưởng tao không biết gì hả? Bất ngờ chưa bà già?",
+    tags: ["meme", "funny"],
+  },
+  {
+    term: "Sao mà đỡ được",
+    definition:
+      "Không thể chống đỡ nổi trước vẻ đẹp, sự dễ thương hoặc sự 'lầy lội' của ai đó.",
+    variation: ["Đỡ sao nổi"],
+    example: "Nhan sắc này thì sao mà đỡ được.",
+    tags: ["khen", "camthan"],
+  },
+  {
+    term: "Không hề giả trân",
+    definition: "Nhìn là biết giả tạo ngay, diễn quá lộ liễu (cách nói ngược).",
+    variation: ["Giả trân"],
+    example: "Đội tóc giả nhìn không hề giả trân chút nào.",
+    tags: ["meme", "fake"],
+  },
 ];

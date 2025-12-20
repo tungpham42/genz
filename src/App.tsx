@@ -95,6 +95,7 @@ const App: React.FC = () => {
             <Input.Search
               placeholder="Hôm nay bạn muốn tra từ gì? (vd: Flex, Trap...)"
               allowClear
+              autoFocus
               enterButton={<SearchOutlined />}
               size="large"
               className="custom-search-input"
