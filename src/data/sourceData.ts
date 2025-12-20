@@ -3689,4 +3689,152 @@ export const TERMS: GenZTerm[] = [
     example: "Tưởng có thịt ai ngờ là thanh thủy văn.",
     tags: ["ngontinh", "genre"],
   },
+  // =================================================================
+  // NHÓM: TEENCODE & TỪ VIẾT TẮT (CHAT SLANG)
+  // =================================================================
+  {
+    term: "Ko",
+    definition:
+      "Không. Từ viết tắt kinh điển nhất của mọi thế hệ khi nhắn tin.",
+    variation: ["K", "Hok", "Khum"],
+    example: "Tối nay đi chơi ko?",
+    tags: ["teencode", "daily"],
+  },
+  {
+    term: "Dc",
+    definition: "Được. Viết tắt bỏ dấu, dùng trong hầu hết các cuộc hội thoại.",
+    variation: ["Đc", "Ok"],
+    example: "Thế thì dc, chốt đơn.",
+    tags: ["teencode", "daily"],
+  },
+  {
+    term: "Hỉu",
+    definition:
+      "Hiểu. Cách viết trại âm tạo cảm giác dễ thương, bớt nghiêm trọng hơn từ gốc.",
+    variation: ["Hiểu hông"],
+    example: "Nói nãy giờ có hỉu gì hông?",
+    tags: ["teencode", "daily"],
+  },
+  {
+    term: "Lém",
+    definition: "Lắm. Cách nói điệu đà, thường dùng để khen hoặc than thở.",
+    variation: ["Lắm"],
+    example: "Hôm nay xinh lém nha.",
+    tags: ["teencode", "daily"],
+  },
+  {
+    term: "J",
+    definition: "Gì. Viết tắt theo cách phát âm tiếng Anh (G -> J).",
+    variation: ["Gì"],
+    example: "Đang làm j đó?",
+    tags: ["teencode", "daily"],
+  },
+  {
+    term: "Z",
+    definition:
+      "Vậy. Dùng thay cho chữ 'V' hoặc 'Vậy' ở cuối câu hỏi/cảm thán.",
+    variation: ["Zậy", "V"],
+    example: "Sao z? Có chuyện j à?",
+    tags: ["teencode", "daily"],
+  },
+  {
+    term: "Iu",
+    definition:
+      "Yêu. Cách viết ngắn gọn, nhìn mềm mại và dễ thương hơn từ gốc.",
+    variation: ["Yêu"],
+    example: "Iu bạn nhìu.",
+    tags: ["teencode", "love"],
+  },
+  {
+    term: "Thui",
+    definition: "Thôi. Cách nói giảm nhẹ, nghe nũng nịu hoặc nhẹ nhàng hơn.",
+    variation: ["Thôi"],
+    example: "Muộn rồi, đi ngủ thui.",
+    tags: ["teencode", "daily"],
+  },
+  {
+    term: "Rùi",
+    definition:
+      "Rồi. Tương tự như 'Gòi', dùng để báo cáo hoàn thành hoặc xác nhận.",
+    variation: ["Rồi", "Gòi"],
+    example: "Làm xong bài tập rùi.",
+    tags: ["teencode", "daily"],
+  },
+  {
+    term: "Mk",
+    definition: "Mình. Viết tắt thường thấy trong các confession hoặc tâm sự.",
+    variation: ["Mình"],
+    example: "Mk muốn tìm bạn nữ ngồi bàn 3 hôm nay.",
+    tags: ["teencode", "xungho"],
+  },
+  {
+    term: "Cx",
+    definition: "Cũng. Viết tắt phổ biến.",
+    variation: ["Cũng"],
+    example: "Hôm nay trời cx đẹp ha.",
+    tags: ["teencode", "daily"],
+  },
+  {
+    term: "Ms",
+    definition: "Mới. Dùng chỉ thời gian hoặc tính chất.",
+    variation: ["Mới"],
+    example: "Em ms đi học về.",
+    tags: ["teencode", "daily"],
+  },
+  {
+    term: "Bít",
+    definition: "Biết. Cách viết sai chính tả cố ý cho nhanh.",
+    variation: ["Biết"],
+    example: "Ai bít đâu, đừng hỏi tui.",
+    tags: ["teencode", "daily"],
+  },
+  {
+    term: "Ak",
+    definition: "À, Á. Từ đệm cuối câu.",
+    variation: ["Ah"],
+    example: "Ủa vậy ak, giờ ms biết.",
+    tags: ["teencode", "daily"],
+  },
+  {
+    term: "Hăm",
+    definition: "Không/Hông. Một biến thể khác của 'Khum', nghe nũng nịu hơn.",
+    variation: ["Hông", "Hem"],
+    example: "Đi ăn hăm?",
+    tags: ["teencode", "daily"],
+  },
+  {
+    term: "Chài ai",
+    definition: "Trời ơi. Than vãn kiểu miền Nam, kéo dài giọng.",
+    variation: ["Trời ơi", "Chời ơi"],
+    example: "Chài ai, sao mà khổ dữ thần.",
+    tags: ["teencode", "camthan"],
+  },
+  {
+    term: "Wá",
+    definition: "Quá. Thay Q bằng W cho nhanh.",
+    variation: ["Quá"],
+    example: "Dễ thương wá đi.",
+    tags: ["teencode", "khen"],
+  },
+  {
+    term: "Gato",
+    definition: "Ghen ăn tức ở (viết tắt). Ghen tị với người khác.",
+    variation: ["Ghen"],
+    example: "Bớt Gato với thành công của người khác đi.",
+    tags: ["teencode", "slang"],
+  },
+  {
+    term: "Uk",
+    definition: "Ừ/Ok. Cách trả lời đồng ý ngắn gọn (đôi khi hơi lạnh lùng).",
+    variation: ["Uhm", "Ukie"],
+    example: "Uk, biết rồi.",
+    tags: ["teencode", "daily"],
+  },
+  {
+    term: "Nà",
+    definition: "Nè hoặc Là (nói ngọng/nói điệu).",
+    variation: ["Nè"],
+    example: "Em nà, nhớ em hông?",
+    tags: ["teencode", "daily"],
+  },
 ];
