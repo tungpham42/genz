@@ -52,7 +52,7 @@ body {
 }
 
 /* Input Search Customization */
-= .custom-search-input .ant-input-wrapper {
+.custom-search-input .ant-input-wrapper {
   box-shadow: 0 8px 20px rgba(139, 92, 246, 0.1);
   border-radius: 20px !important;
 }
