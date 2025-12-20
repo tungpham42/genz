@@ -1,12 +1,13 @@
 import React from "react";
 import { Card, Tag, Typography, Button, Tooltip, message } from "antd";
-import { CopyOutlined } from "@ant-design/icons";
+import { ShareAltOutlined, CopyOutlined } from "@ant-design/icons";
 import { GenZTerm } from "../types";
 
 const { Title, Text } = Typography;
 
 interface Props {
   data: GenZTerm;
+  highlight?: string; // Thêm prop highlight (optional)
 }
 
 // Function to generate consistent pastel colors based on tag length
@@ -28,27 +29,74 @@ const getTagColor = (tag: string) => {
   return colors[index];
 };
 
-const TermCard: React.FC<Props> = ({ data }) => {
+const TermCard: React.FC<Props> = ({ data, highlight = "" }) => {
   const handleCopy = () => {
     navigator.clipboard.writeText(`${data.term}: ${data.definition}`);
     message.success("Đã copy vào clipboard nè! ✨");
   };
 
+  const handleShare = async () => {
+    const shareData = {
+      title: `Gen Z Dictionary: ${data.term}`,
+      text: `Ê biết từ "${data.term}" là gì hông? Nghĩa là: ${data.definition} đó. \nVí dụ: "${data.example}"`,
+      url: window.location.href,
+    };
+    try {
+      if (navigator.share) {
+        await navigator.share(shareData);
+      } else {
+        await navigator.clipboard.writeText(shareData.text);
+        message.success("Đã copy nội dung, gửi cho hội chị em ngay đi! 🚀");
+      }
+    } catch (err) {
+      console.log("User cancelled share");
+    }
+  };
+
+  // --- HÀM TÔ MÀU TỪ KHÓA ---
+  const getHighlightedText = (text: string, highlight: string) => {
+    if (!highlight.trim()) return text;
+    // Escape các ký tự đặc biệt trong regex
+    const escapeRegExp = (string: string) =>
+      string.replace(/[.*+?^${}()|[\]\\]/g, "\\$&");
+    const regex = new RegExp(`(${escapeRegExp(highlight)})`, "gi");
+    const parts = text.split(regex);
+
+    return parts.map((part, index) =>
+      regex.test(part) ? (
+        <span
+          key={index}
+          style={{
+            backgroundColor: "#fffb8f", // Màu vàng highlight
+            color: "#000",
+            padding: "0 2px",
+            borderRadius: "4px",
+            boxShadow: "0 1px 2px rgba(0,0,0,0.1)",
+          }}
+        >
+          {part}
+        </span>
+      ) : (
+        part
+      )
+    );
+  };
+
   return (
     <Card
+      hoverable
       style={{
         width: "100%",
         marginBottom: 24,
-        borderRadius: 24, // Super rounded
+        borderRadius: 24,
         border: "none",
-        boxShadow: "0 10px 40px -10px rgba(0,0,0,0.05)", // Soft diffuse shadow
+        boxShadow: "0 10px 40px -10px rgba(0,0,0,0.05)",
         background: "#FFFFFF",
         overflow: "hidden",
         position: "relative",
       }}
       bodyStyle={{ padding: "24px 28px" }}
     >
-      {/* Decorative colored bar at top */}
       <div
         style={{
           position: "absolute",
@@ -80,7 +128,8 @@ const TermCard: React.FC<Props> = ({ data }) => {
               fontSize: "1.75rem",
             }}
           >
-            {data.term}
+            {/* Highlight Term */}
+            {getHighlightedText(data.term, highlight)}
           </Title>
           <div style={{ marginTop: 8 }}>
             {data.tags.map((tag) => (
@@ -103,13 +152,20 @@ const TermCard: React.FC<Props> = ({ data }) => {
           </div>
         </div>
 
-        {/* Quick Actions */}
         <div style={{ display: "flex", gap: 8 }}>
           <Tooltip title="Copy định nghĩa">
             <Button
               shape="circle"
               icon={<CopyOutlined style={{ color: "#718096" }} />}
               onClick={handleCopy}
+              style={{ border: "none", background: "#EDF2F7" }}
+            />
+          </Tooltip>
+          <Tooltip title="Share ngay">
+            <Button
+              shape="circle"
+              icon={<ShareAltOutlined style={{ color: "#718096" }} />}
+              onClick={handleShare}
               style={{ border: "none", background: "#EDF2F7" }}
             />
           </Tooltip>
@@ -126,17 +182,18 @@ const TermCard: React.FC<Props> = ({ data }) => {
             fontWeight: 400,
           }}
         >
-          {data.definition}
+          {/* Highlight Definition */}
+          {getHighlightedText(data.definition, highlight)}
         </Text>
       </div>
 
-      {/* Example Box - Chat Bubble Style */}
+      {/* Example Box */}
       <div
         style={{
           background: "#F7FAFC",
           padding: "16px 20px",
           borderRadius: "16px",
-          borderLeft: "4px solid #8B5CF6", // Accent border
+          borderLeft: "4px solid #8B5CF6",
           display: "flex",
           flexDirection: "column",
           gap: 6,
@@ -162,7 +219,8 @@ const TermCard: React.FC<Props> = ({ data }) => {
             fontFamily: "Lexend Deca",
           }}
         >
-          "{data.example}"
+          {/* Highlight Example */}"
+          {getHighlightedText(data.example, highlight)}"
         </Text>
       </div>
     </Card>

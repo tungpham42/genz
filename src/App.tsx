@@ -147,7 +147,7 @@ const App: React.FC = () => {
             }}
             renderItem={(item) => (
               <List.Item style={{ marginBottom: 0 }}>
-                <TermCard data={item} />
+                <TermCard data={item} highlight={searchText} />
               </List.Item>
             )}
             locale={{
