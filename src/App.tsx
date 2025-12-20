@@ -92,14 +92,20 @@ const App: React.FC = () => {
           </div>
 
           <div style={{ width: "100%", maxWidth: "500px" }}>
-            <Input.Search
+            {/* Refactored Search Bar: Input with prefix icon instead of Input.Search with enterButton */}
+            <Input
               placeholder="Hôm nay bạn muốn tra từ gì? (vd: Flex, Trap...)"
               allowClear
               autoFocus
-              enterButton={<SearchOutlined />}
+              prefix={
+                <SearchOutlined
+                  style={{ color: "rgba(0,0,0,.45)", fontSize: "18px" }}
+                />
+              }
               size="large"
               className="custom-search-input"
               onChange={handleSearch}
+              value={searchText} // Added value prop for controlled component best practice
             />
           </div>
         </Header>
