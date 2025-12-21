@@ -4944,4 +4944,215 @@ export const TERMS: GenZTerm[] = [
     example: "Chụp lookbook cho shop quần áo.",
     tags: ["youtube", "fashion"],
   },
+  // --- TREND TÚI MÙ & POP MART (BLIND BOX) ---
+  {
+    term: "Túi mù",
+    definition:
+      "Blind Bag. Những túi nhỏ chứa vật phẩm ngẫu nhiên (thường là Charm, mô hình, đồ chơi) mà người mua không biết bên trong là gì cho đến khi xé ra. Đang là trào lưu livestream cực hot.",
+    variation: ["Blind bag", "Túi nhân phẩm"],
+    example:
+      "Tối qua nằm lướt TikTok xem live xé túi mù cuốn không dứt ra được.",
+    tags: ["trend", "toy", "livestream"],
+  },
+  {
+    term: "Nguyện vọng",
+    definition:
+      "Luật chơi phổ biến trong livestream xé túi mù. Người mua được chọn một 'nguyện vọng' (ví dụ: màu hồng, cặp đôi), nếu xé ra đúng nguyện vọng sẽ được tặng thêm túi.",
+    variation: ["Wish"],
+    example: "Em chọn nguyện vọng màu xanh, ra màu xanh là được thêm quà nha.",
+    tags: ["trend", "rule"],
+  },
+  {
+    term: "Labubu",
+    definition:
+      "Nhân vật quái vật thỏ răng nanh (thuộc Pop Mart) gây sốt toàn cầu. Sở hữu Labubu là biểu hiện của sự sành điệu và chịu chi.",
+    variation: ["Bubu"],
+    example: "Dân tình đang xếp hàng từ 4h sáng để săn Labubu.",
+    tags: ["trend", "toy", "fashion"],
+  },
+  {
+    term: "Secret",
+    definition:
+      "Vật phẩm bí mật, siêu hiếm trong các bộ Blind Box (tỷ lệ ra rất thấp, 1/72 hoặc 1/144). Ra được Secret là nhân phẩm cực cao.",
+    variation: ["Ẩn", "Bí mật"],
+    example: "Trời ơi tin được không, bóc phát đầu tiên ra ngay con Secret!",
+    tags: ["trend", "lucky"],
+  },
+  {
+    term: "Check card",
+    definition:
+      "Xem thẻ đi kèm trong hộp Blind Box để biết bên trong là nhân vật gì mà không cần xé bao nilon (Seal) bọc mô hình.",
+    variation: ["Check thẻ"],
+    example: "Hàng này là check card chưa xé seal (check card no seal).",
+    tags: ["trend", "shopping"],
+  },
+  {
+    term: "Xé seal",
+    definition:
+      "Hành động bóc lớp nilon niêm phong sản phẩm. Cảm giác 'xé seal' được coi là thỏa mãn nhất.",
+    variation: ["Bóc seal", "Đập hộp"],
+    example: "Cảm giác xé seal con iPhone mới nó đã gì đâu.",
+    tags: ["tech", "toy", "action"],
+  },
+  {
+    term: "Capybara",
+    definition:
+      "Chuột lang nước. Loài vật có biểu cảm vô tri, thân thiện, được mệnh danh là 'Bộ trưởng bộ ngoại giao', cực hot trong giới đồ chơi và meme.",
+    variation: ["Chuột lang", "Bộ trưởng"],
+    example: "Tặng tao con gấu bông Capybara đi, nhìn mặt nó hề lắm.",
+    tags: ["animal", "meme", "trend"],
+  },
+  {
+    term: "Baby Three",
+    definition:
+      "Một dòng Blind Box hình thú mắt to đang rất hot, cạnh tranh với Labubu.",
+    variation: ["Bé ba"],
+    example: "Mắt con Baby Three này nhìn lúng liếng yêu chưa.",
+    tags: ["trend", "toy"],
+  },
+  {
+    term: "Đáy xã hội",
+    definition:
+      "Cụm từ hài hước chỉ những món đồ/nhân vật xấu nhất trong bộ sưu tập mà không ai muốn bốc phải (hoặc chỉ người có địa vị thấp trong game).",
+    variation: ["Con ghẻ"],
+    example: "Bốc phải con xấu nhất bộ, đúng là đáy xã hội.",
+    tags: ["game", "toy", "funny"],
+  },
+
+  // --- CÁC TỪ LÓNG & MEME MỚI NHẤT (TIKTOK 2024-2025) ---
+  {
+    term: "Dính",
+    definition:
+      "Bị cuốn hút, mê mẩn, không dứt ra được (giống từ 'Cuốn' nhưng cấp độ cao hơn).",
+    variation: ["Dính cứng ngắc"],
+    example: "Bài nhạc này nghe một lần là dính luôn.",
+    tags: ["khen", "trend"],
+  },
+  {
+    term: "Rizz",
+    definition:
+      "Charisma (Sức hút). Khả năng tán tỉnh, lôi cuốn người khác phái cực đỉnh (Từ lóng quốc tế du nhập mạnh vào VN).",
+    variation: ["Sức hút"],
+    example: "Ông này rizz chúa, nói câu nào em đổ câu đó.",
+    tags: ["slang", "flirt"],
+  },
+  {
+    term: "Delulu",
+    definition:
+      "Delusional (Ảo tưởng). Thường dùng cho fan Kpop hay tưởng tượng mình yêu idol, hoặc người yêu đơn phương hay suy diễn.",
+    variation: ["Ảo tưởng"],
+    example: "Delulu is the solulu (Ảo tưởng là giải pháp duy nhất).",
+    tags: ["slang", "kpop"],
+  },
+  {
+    term: "Trôn",
+    definition:
+      "Troll (Chơi khăm). Phiên âm tiếng Việt hài hước của từ Troll (Meme: Trôn Việt Nam).",
+    variation: ["Trôn Việt Nam"],
+    example: "Thôi đừng giận, trôn Việt Nam tí thôi.",
+    tags: ["meme", "funny"],
+  },
+  {
+    term: "Cảm lạnh",
+    definition:
+      "Chơi chữ của 'Cảm động'. Dùng cho những tình huống định deep/xúc động nhưng kết thúc lãng xẹt hoặc buồn cười.",
+    variation: ["Hết hồn"],
+    example: "Nghe câu chuyện tình yêu của nó mà tao cảm lạnh.",
+    tags: ["meme", "reaction"],
+  },
+  {
+    term: "Tinh hoa hội tụ",
+    definition:
+      "Cụm từ viral: 'Tinh hoa hội tụ, phụ nữ rất yêu'. Chỉ sự xuất sắc, hoàn hảo hoặc tập hợp những gì tốt đẹp nhất.",
+    variation: ["Phụ nữ rất yêu"],
+    example: "Nhìn dàn cast chương trình này đúng là tinh hoa hội tụ.",
+    tags: ["meme", "khen"],
+  },
+  {
+    term: "Bất ổn",
+    definition:
+      "Tình trạng hỗn loạn, kỳ quặc hoặc có vấn đề (dùng với sắc thái hài hước).",
+    variation: ["Không ổn"],
+    example: "Gia đình bất ổn, lớp học bất ổn.",
+    tags: ["meme", "daily"],
+  },
+  {
+    term: "Độc lạ Bình Dương",
+    definition:
+      "Meme chỉ những sự việc kỳ lạ, độc đáo, khó tin (tương tự 'Only in Ohio' của Mỹ).",
+    variation: ["Độc lạ"],
+    example: "Con xe độ này nhìn đúng chất độc lạ Bình Dương.",
+    tags: ["meme", "funny"],
+  },
+  {
+    term: "Bảnh",
+    definition:
+      "Đẹp trai, ngầu, chải chuốt. (Nổi lên từ các meme liên quan đến Khá Bảnh hoặc Huấn Hoa Hồng).",
+    variation: ["Khá bảnh"],
+    example: "Hôm nay vuốt keo nhìn bảnh đấy.",
+    tags: ["khen", "meme"],
+  },
+  {
+    term: "Nấu xốp",
+    definition:
+      "No Hope (Không còn hy vọng). Cách nói lái hài hước kiểu tiếng Anh bồi.",
+    variation: ["No hope"],
+    example: "Ca này bác sĩ bảo nấu xốp rồi.",
+    tags: ["slang", "fail"],
+  },
+  {
+    term: "Ét ô ét",
+    definition:
+      "SOS. Cầu cứu (nhưng dùng trong ngữ cảnh hài hước, khi gặp trai đẹp hoặc tình huống khó đỡ).",
+    variation: ["Cứu tui"],
+    example: "Thấy trai đẹp 6 múi, ét ô ét!",
+    tags: ["meme", "reaction"],
+  },
+  {
+    term: "Pam yêu ơi",
+    definition:
+      "Câu nói viral của em bé Pam (Pamela). Dùng để gọi người yêu hoặc bạn bè một cách nũng nịu.",
+    variation: ["Ngoan xinh yêu"],
+    example: "Pam yêu ơi, cho xin 50k đi.",
+    tags: ["meme", "cute"],
+  },
+  {
+    term: "Flexing",
+    definition:
+      "Khoe khoang thành tích/tài sản (Flex). Từ này đã có nhưng vẫn đang rất thịnh hành với các biến thể.",
+    variation: ["Flex", "Khoe"],
+    example: "Hội nhóm Flex đến hơi thở cuối cùng.",
+    tags: ["trend", "lifestyle"],
+  },
+  {
+    term: "Kiwi kiwi",
+    definition:
+      "Ngon. (Đã có trong list cũ, nhưng nhắc lại vì vẫn hot trong các review ăn uống).",
+    variation: ["Ngon"],
+    example: "Món này vị kiwi kiwi lắm nha.",
+    tags: ["slang", "food"],
+  },
+  {
+    term: "Mê",
+    definition: "Thích thú, đam mê. Gen Z hay dùng cụm 'Mê chữ ê kéo dài'.",
+    variation: ["Mê mẩn"],
+    example: "Outfit hôm nay nhìn mê chữ ê kéo dài.",
+    tags: ["khen", "feeling"],
+  },
+  {
+    term: "Vô tri",
+    definition:
+      "Không có suy nghĩ, ngây ngô hoặc những vật/hành động vô nghĩa nhưng gây cười (Đã có, nhưng bổ sung ngữ cảnh thú bông).",
+    variation: ["Ngáo"],
+    example: "Con gấu bông này mặt vô tri thật sự.",
+    tags: ["meme", "funny"],
+  },
+  {
+    term: "Sốt đất",
+    definition:
+      "Ám chỉ một trào lưu nào đó bùng nổ giá cả hoặc độ hot bất ngờ (như trend gấu bông, Labubu).",
+    variation: ["Tăng giá"],
+    example: "Labubu đang sốt đất, giá tăng gấp đôi.",
+    tags: ["market", "trend"],
+  },
 ];
