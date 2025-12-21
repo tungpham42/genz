@@ -4689,4 +4689,259 @@ export const TERMS: GenZTerm[] = [
     example: "Dạo này Facebook bóp tương tác ghê quá, đăng ảnh không ai like.",
     tags: ["social", "fail"],
   },
+
+  // =================================================================
+  // BỔ SUNG: GIAO TIẾP, TỪ ĐỆM & CÁCH NÓI GIẢM (COMMUNICATION NUANCES)
+  // =================================================================
+  {
+    term: "Cũng cũng",
+    definition:
+      "Dùng để trả lời một cách lấp lửng, không khẳng định chắc chắn 100% nhưng thiên về hướng đồng ý/tích cực, hoặc tỏ vẻ khiêm tốn.",
+    variation: ["Cũng tàm tạm"],
+    example: "Mày thấy món này ngon không? - Ừ thì... ăn thấy cũng cũng.",
+    tags: ["daily", "giam-nhe"],
+  },
+  {
+    term: "Sương sương",
+    definition:
+      "Một chút, sơ sơ, không nhiều lắm (nhưng thực tế đôi khi là làm rất lồng lộn nhưng nói giảm đi cho khiêm tốn).",
+    variation: ["Sơ sơ"],
+    example: "Hôm nay makeup sương sương thôi mà tốn 2 tiếng.",
+    tags: ["daily", "lifestyle"],
+  },
+  {
+    term: "Ní",
+    definition:
+      "Bạn, cưng. Cách gọi thân mật giữa bạn bè (biến âm từ Honey -> Hơ ni -> Ni -> Ní). Xuất phát từ miền Tây và viral trên TikTok.",
+    variation: ["Mấy ní", "Bạn thân"],
+    example: "Đi đâu đó mấy ní?",
+    tags: ["xungho", "trend"],
+  },
+  {
+    term: "Ý là",
+    definition:
+      "Cụm từ đệm (filler phrase) dùng để bắt đầu câu chuyện, giải thích hoặc nhấn mạnh ý định (Gen Z dùng lặp lại từ này rất nhiều).",
+    variation: ["Ý tui là"],
+    example: "Ý là... tối nay mình đi ăn gì, chứ ý là tao đói rồi.",
+    tags: ["daily", "filler"],
+  },
+  {
+    term: "Kiểu",
+    definition:
+      "Từ đệm (tương tự 'Like' trong tiếng Anh), dùng khi đang suy nghĩ, bí từ, hoặc muốn mô tả một trạng thái mơ hồ.",
+    variation: ["Kiểu là"],
+    example: "Nó bị... kiểu... khó tả lắm, kiểu không phải gu tao.",
+    tags: ["daily", "filler"],
+  },
+  {
+    term: "Đồ đó",
+    definition:
+      "Từ đệm cuối câu (and stuff like that), dùng để liệt kê hoặc nhấn mạnh một phong cách/thái độ nào đó (thường là trêu chọc).",
+    variation: ["Đồ"],
+    example: "Cũng ra vẻ lạnh lùng boy đồ đó.",
+    tags: ["daily", "funny"],
+  },
+  {
+    term: "Hoan hỉ",
+    definition:
+      "Vui vẻ chấp nhận, bỏ qua lỗi lầm. Từ ngữ Phật giáo nhưng được dùng viral để khuyên nhau bớt sân si, nóng giận.",
+    variation: ["Vui vẻ"],
+    example: "Thôi hoan hỉ đi, Tết nhất đến nơi rồi đừng cãi nhau.",
+    tags: ["attitude", "trend"],
+  },
+  {
+    term: "Cũng ra gì và này nọ",
+    definition:
+      "Khen ngợi ai đó/thứ gì đó khá là xịn, giỏi giang, không tầm thường chút nào.",
+    variation: ["Ra dẻ"],
+    example: "Nhìn vậy thôi chứ profile cũng ra gì và này nọ đấy.",
+    tags: ["khen", "funny"],
+  },
+  {
+    term: "Xin nhẹ",
+    definition:
+      "Xin xỏ (thường là xin info, xin tiền, xin đồ) nhưng thêm chữ 'nhẹ' để giảm cảm giác đòi hỏi hoặc tạo sự hài hước.",
+    variation: ["Xin cái"],
+    example: "Xin nhẹ cái info anh đẹp trai bàn bên.",
+    tags: ["action", "funny"],
+  },
+  {
+    term: "Mấy bà",
+    definition:
+      "Cách gọi chung cho hội chị em hoặc người xem trên mạng xã hội (kể cả người xem là nam).",
+    variation: ["Mấy má"],
+    example: "Mấy bà ơi, hôm nay tui có biến căng.",
+    tags: ["xungho", "social"],
+  },
+  {
+    term: "Hơn thua",
+    definition:
+      "So đo, tính toán, tranh cãi từng chút một để giành phần thắng về mình (thường dùng khuyên 'đừng hơn thua').",
+    variation: ["Sân si"],
+    example: "Sống hoan hỉ, bớt hơn thua cho đời thanh thản.",
+    tags: ["attitude", "negative"],
+  },
+  {
+    term: "Cũng gọi là",
+    definition:
+      "Được xem là, tạm chấp nhận là. Dùng để đánh giá mức độ một cách dè dặt.",
+    variation: ["Tạm ổn"],
+    example: "Nhan sắc cũng gọi là có nét, nhưng chưa đến mức xuất sắc.",
+    tags: ["nhanxet", "hedging"],
+  },
+  {
+    term: "Tới công chuyện",
+    definition:
+      "Sắp có biến, hoặc sắp phải giải quyết một vấn đề rắc rối/thú vị nào đó (thường dùng khi thấy ai đó chuẩn bị 'chiến').",
+    variation: ["Tới nái"],
+    example: "Nhìn bà hàng xóm xắn tay áo là biết tới công chuyện rồi.",
+    tags: ["drama", "daily"],
+  },
+  {
+    term: "Gì á",
+    definition:
+      "Cách hỏi lại 'Cái gì?' nhưng với giọng điệu ngây thơ, ngơ ngác (đôi khi là giả vờ không hiểu).",
+    variation: ["Gì cơ"],
+    example: "Sao cơ? Gì á? Em hổng nghe rõ.",
+    tags: ["question", "cute"],
+  },
+  {
+    term: "Chấn động",
+    definition:
+      "Mô tả tin tức/sự việc cực kỳ sốc, bất ngờ (thường dùng phóng đại).",
+    variation: ["Chấn động địa cầu"],
+    example: "Tin này chấn động nha, hoa hậu A hẹn hò đại gia B.",
+    tags: ["news", "drama"],
+  },
+
+  // =================================================================
+  // BỔ SUNG: YOUTUBE & SÁNG TẠO NỘI DUNG (VLOGGING & CREATOR)
+  // =================================================================
+  {
+    term: "Vlog",
+    definition:
+      "Video Blog. Dạng video nhật ký ghi lại cuộc sống đời thường, chuyến đi hoặc suy nghĩ cá nhân của người quay.",
+    variation: ["Daily Vlog", "Travel Vlog"],
+    example: "Cuối tuần đi Đà Lạt quay vlog không?",
+    tags: ["youtube", "content"],
+  },
+  {
+    term: "Siêu to khổng lồ",
+    definition:
+      "Cụm từ viral từ Bà Tân Vlog, chỉ những món ăn hoặc vật dụng có kích thước cực lớn, ngoại cỡ. Giờ dùng để mô tả cái gì đó rất to.",
+    variation: ["Big size"],
+    example: "Hôm nay làm nồi lẩu siêu to khổng lồ mời cả xóm.",
+    tags: ["youtube", "meme", "food"],
+  },
+  {
+    term: "Reaction",
+    definition:
+      "Dạng video quay lại phản ứng/bình luận của người xem khi theo dõi một MV, phim hoặc video khác.",
+    variation: ["React", "Xem reaction"],
+    example: "Hóng video reaction của Độ Mixi về MV mới của Jack.",
+    tags: ["youtube", "content"],
+  },
+  {
+    term: "Giật tít",
+    definition:
+      "Đặt tiêu đề video gây sốc, phóng đại hoặc gây tò mò để dụ người xem bấm vào (Clickbait).",
+    variation: ["Clickbait", "Câu view"],
+    example: "Tiêu đề giật tít thế mà nội dung chả có gì.",
+    tags: ["youtube", "tech"],
+  },
+  {
+    term: "Nút Vàng",
+    definition:
+      "Giải thưởng Play Button của YouTube dành cho kênh đạt mốc 1.000.000 người đăng ký (Subscribers).",
+    variation: ["Gold Play Button"],
+    example: "Kênh này sắp đạt Nút Vàng rồi, anh em sub ủng hộ đi.",
+    tags: ["youtube", "award"],
+  },
+  {
+    term: "Nút Bạc",
+    definition:
+      "Giải thưởng Play Button của YouTube dành cho kênh đạt mốc 100.000 người đăng ký.",
+    variation: ["Silver Play Button"],
+    example: "Làm YouTube 2 năm mới rinh được cái Nút Bạc.",
+    tags: ["youtube", "award"],
+  },
+  {
+    term: "Vàng tiền",
+    definition:
+      "Biểu tượng $ màu vàng. Video bị tắt kiếm tiền hoặc hạn chế quảng cáo do vi phạm bản quyền hoặc nội dung nhạy cảm.",
+    variation: ["Tắt kiếm tiền"],
+    example: "Video mới đăng bị vàng tiền rồi, coi như công cốc.",
+    tags: ["youtube", "money", "bad"],
+  },
+  {
+    term: "Re-up",
+    definition:
+      "Hành động lấy video của người khác rồi đăng lại lên kênh mình (thường là để kiếm tiền bất chính). Rất bị cộng đồng lên án.",
+    variation: ["Ăn cắp video"],
+    example: "Kênh này toàn re-up, report cho nó bay màu đi.",
+    tags: ["youtube", "bad"],
+  },
+  {
+    term: "Review",
+    definition:
+      "Video đánh giá, nhận xét chi tiết về sản phẩm (công nghệ, đồ ăn, mỹ phẩm...) để tư vấn cho người xem.",
+    variation: ["Đánh giá"],
+    example: "Xem review iPhone 15 trước khi xuống tiền.",
+    tags: ["youtube", "content"],
+  },
+  {
+    term: "Trên tay",
+    definition:
+      "Dạng video trải nghiệm nhanh sản phẩm mới ra mắt (thường là đồ công nghệ) một cách trực tiếp.",
+    variation: ["Hands-on"],
+    example: "Video trên tay con Galaxy Fold mới nhìn mướt quá.",
+    tags: ["youtube", "tech"],
+  },
+  {
+    term: "Prank",
+    definition:
+      "Video chơi khăm, trêu chọc người khác để ghi lại phản ứng hài hước (cần phân biệt với trò đùa ác ý).",
+    variation: ["Troll", "Chơi khăm"],
+    example: "Mấy video prank ở phố đi bộ xem cười đau ruột.",
+    tags: ["youtube", "funny"],
+  },
+  {
+    term: "ASMR",
+    definition:
+      "Autonomous Sensory Meridian Response. Video tập trung vào âm thanh (ăn uống, tiếng gõ, tiếng thì thầm...) tạo cảm giác râm ran, thư giãn.",
+    variation: ["Video tiếng động"],
+    example: "Mất ngủ toàn phải bật ASMR nghe mới ngủ được.",
+    tags: ["youtube", "relax"],
+  },
+  {
+    term: "Sub",
+    definition: "Subscribe. Đăng ký kênh để theo dõi video mới nhất.",
+    variation: ["Đăng ký"],
+    example: "Nhớ Like, Share và Sub cho kênh mình nhé.",
+    tags: ["youtube", "action"],
+  },
+  {
+    term: "Công chiếu",
+    definition:
+      "Tính năng Premiere. Phát video đã quay sẵn nhưng dưới dạng trực tiếp (Live) để mọi người cùng xem và chat cùng lúc.",
+    variation: ["Premiere"],
+    example: "Tối nay 8h công chiếu MV, đặt lịch nhắc nhé.",
+    tags: ["youtube", "feature"],
+  },
+  {
+    term: "Bản quyền",
+    definition:
+      "Copyright. Vấn đề pháp lý về sở hữu nội dung/âm nhạc. Nỗi ám ảnh 'đánh gậy bản quyền' của YouTuber.",
+    variation: ["Gậy bản quyền"],
+    example: "Dính nhạc bản quyền cái là bị tắt tiếng ngay.",
+    tags: ["youtube", "law"],
+  },
+  {
+    term: "Lookbook",
+    definition:
+      "Video thời trang, người mẫu thay nhiều bộ trang phục khác nhau theo chủ đề/bộ sưu tập.",
+    variation: ["Video phối đồ"],
+    example: "Chụp lookbook cho shop quần áo.",
+    tags: ["youtube", "fashion"],
+  },
 ];
