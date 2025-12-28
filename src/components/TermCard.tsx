@@ -95,7 +95,7 @@ const TermCard: React.FC<Props> = ({ data, highlight = "" }) => {
         overflow: "hidden",
         position: "relative",
       }}
-      bodyStyle={{ padding: "24px 28px" }}
+      styles={{ body: { padding: "24px 28px" } }}
     >
       <div
         style={{
