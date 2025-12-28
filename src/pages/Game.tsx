@@ -29,12 +29,14 @@ import { GenZTerm } from "../types";
 const { Title, Text, Paragraph } = Typography;
 const { Content } = Layout;
 
-// --- CẤU HÌNH CẤP ĐỘ ---
+// --- CẤU HÌNH ---
 const LEVELS = [
   { value: 5, label: "Tập sự", color: "green" },
   { value: 10, label: "Thành thạo", color: "blue" },
   { value: 20, label: "Trùm cuối", color: "red" },
 ];
+
+const TIME_PER_QUESTION = 15; // 15 giây mỗi câu
 
 interface Question {
   target: GenZTerm;
@@ -67,8 +69,8 @@ const Game: React.FC = () => {
   const [data, setData] = useState<GenZTerm[]>([]);
   const [loading, setLoading] = useState<boolean>(true);
 
-  // Game Settings State
-  const [selectedLevel, setSelectedLevel] = useState<number>(10); // Mặc định 10 câu
+  // Game Settings
+  const [selectedLevel, setSelectedLevel] = useState<number>(10);
 
   // Game Play State
   const [gameStarted, setGameStarted] = useState<boolean>(false);
@@ -78,7 +80,10 @@ const Game: React.FC = () => {
   const [questionCount, setQuestionCount] = useState<number>(0);
   const [selectedAnswer, setSelectedAnswer] = useState<string | null>(null);
 
-  // High Scores State (Object: { 5: score, 10: score, 20: score })
+  // Timer State
+  const [timeLeft, setTimeLeft] = useState<number>(TIME_PER_QUESTION);
+
+  // High Scores
   const [highScores, setHighScores] = useState<Record<number, number>>({
     5: 0,
     10: 0,
@@ -100,7 +105,6 @@ const Game: React.FC = () => {
       }
     };
 
-    // Load High Scores từ LocalStorage
     const savedScores = localStorage.getItem("genz_highscores_db");
     if (savedScores) {
       try {
@@ -109,26 +113,37 @@ const Game: React.FC = () => {
         console.error("Lỗi parse high score cũ", e);
       }
     }
-
     fetchData();
   }, []);
 
-  // --- EFFECT: Save High Score khi kết thúc game ---
+  // --- EFFECT: Timer Logic ---
+  useEffect(() => {
+    // Chỉ chạy khi game đang chơi, chưa kết thúc, và chưa chọn đáp án
+    if (!gameStarted || gameEnded || selectedAnswer) return;
+
+    if (timeLeft === 0) {
+      handleTimeout();
+      return;
+    }
+
+    const timer = setInterval(() => {
+      setTimeLeft((prev) => prev - 1);
+    }, 1000);
+
+    return () => clearInterval(timer);
+  }, [timeLeft, gameStarted, gameEnded, selectedAnswer]); // eslint-disable-line react-hooks/exhaustive-deps
+
+  // --- EFFECT: Save High Score ---
   useEffect(() => {
     if (gameEnded) {
       const currentHighScore = highScores[selectedLevel] || 0;
-
       if (score > currentHighScore) {
-        // Cập nhật State
         const newHighScores = { ...highScores, [selectedLevel]: score };
         setHighScores(newHighScores);
-
-        // Lưu vào LocalStorage
         localStorage.setItem(
           "genz_highscores_db",
           JSON.stringify(newHighScores)
         );
-
         message.success({
           content: `Kỷ lục mới mức ${selectedLevel} câu! Đỉnh của chóp!`,
           icon: <TrophyOutlined style={{ color: "#faad14" }} />,
@@ -148,9 +163,7 @@ const Game: React.FC = () => {
     const randomIndex = Math.floor(Math.random() * data.length);
     const targetItem = data[randomIndex];
 
-    if (!targetItem || !targetItem.term) {
-      return; // Skip bad data
-    }
+    if (!targetItem || !targetItem.term) return;
 
     const potentialDistractors = data.filter(
       (item) =>
@@ -169,22 +182,26 @@ const Game: React.FC = () => {
       options: allOptions,
       correctTerm: targetItem.term,
     });
+
+    // Reset trạng thái cho câu hỏi mới
     setSelectedAnswer(null);
+    setTimeLeft(TIME_PER_QUESTION); // Reset đồng hồ
   };
 
-  const startGame = () => {
-    // Kiểm tra nếu dữ liệu ít hơn số câu hỏi yêu cầu (optional)
-    if (data.length < selectedLevel && data.length > 0) {
-      message.warning(
-        `Chỉ có ${data.length} từ trong từ điển. Sẽ chơi tối đa số từ này.`
-      );
+  const handleNextQuestion = () => {
+    if (questionCount >= selectedLevel) {
+      setGameEnded(true);
+    } else {
+      setQuestionCount((prev) => prev + 1);
+      generateQuestion();
     }
+  };
 
-    setGameStarted(true);
-    setGameEnded(false);
-    setScore(0);
-    setQuestionCount(1);
-    generateQuestion();
+  const handleTimeout = () => {
+    message.error("Hết giờ rồi fen ơi! Xu cà na 😭");
+    setSelectedAnswer("TIMEOUT"); // Block buttons
+    // Không cộng điểm
+    setTimeout(handleNextQuestion, 1500);
   };
 
   const handleAnswer = (term: string) => {
@@ -194,7 +211,7 @@ const Game: React.FC = () => {
     if (term === currentQuestion.correctTerm) {
       setScore((prev) => prev + 1);
       message.success({
-        content: "Chuẩn cơm mẹ nấu!",
+        content: "Chuẩn cơm mẹ nấu! +1",
         icon: <CheckCircleOutlined style={{ color: "#52c41a" }} />,
         duration: 1,
       });
@@ -206,15 +223,27 @@ const Game: React.FC = () => {
       });
     }
 
-    setTimeout(() => {
-      // Logic kết thúc game dựa trên selectedLevel
-      if (questionCount >= selectedLevel) {
-        setGameEnded(true);
-      } else {
-        setQuestionCount((prev) => prev + 1);
-        generateQuestion();
-      }
-    }, 1000);
+    setTimeout(handleNextQuestion, 1000); // Chuyển câu nhanh hơn (1s)
+  };
+
+  const startGame = () => {
+    if (data.length < selectedLevel && data.length > 0) {
+      message.warning(
+        `Chỉ có ${data.length} từ trong từ điển. Sẽ chơi tối đa số từ này.`
+      );
+    }
+    setGameStarted(true);
+    setGameEnded(false);
+    setScore(0);
+    setQuestionCount(1);
+    generateQuestion();
+  };
+
+  // Helper chọn màu cho đồng hồ
+  const getTimerColor = () => {
+    if (timeLeft > 10) return "#52c41a"; // Xanh
+    if (timeLeft > 5) return "#faad14"; // Vàng
+    return "#ff4d4f"; // Đỏ
   };
 
   if (loading)
@@ -272,7 +301,7 @@ const Game: React.FC = () => {
                     {score}/{selectedLevel}
                   </b>
                   <br />
-                  High Score (mức này): <b>{highScores[selectedLevel] || 0}</b>
+                  High Score: <b>{highScores[selectedLevel] || 0}</b>
                 </div>
               }
               extra={[
@@ -285,12 +314,11 @@ const Game: React.FC = () => {
                 >
                   Chơi lại
                 </Button>,
-                // Nút đổi level khi kết thúc
                 <Button
                   key="change"
                   onClick={() => {
-                    setGameEnded(false); // Reset trạng thái kết thúc
-                    setGameStarted(false); // Quay về màn hình Start
+                    setGameEnded(false);
+                    setGameStarted(false);
                   }}
                 >
                   Đổi Level
@@ -310,13 +338,13 @@ const Game: React.FC = () => {
                   "{getKhaKhiaMessage(score, selectedLevel)}"
                 </Text>
               </div>
-              <Space orientation="vertical" style={{ width: "100%" }}>
+              <Space direction="vertical" style={{ width: "100%" }}>
                 <Button
                   block
                   icon={<CopyOutlined />}
                   onClick={() => {
                     navigator.clipboard.writeText(
-                      `Tui đạt ${score}/${selectedLevel} điểm Gen Z Game (Mức ${selectedLevel} câu)!`
+                      `Tui đạt ${score}/${selectedLevel} điểm Gen Z Game!`
                     );
                     message.success("Đã copy!");
                   }}
@@ -327,7 +355,7 @@ const Game: React.FC = () => {
             </Result>
           </Card>
         ) : !gameStarted ? (
-          /* MÀN HÌNH START / CHỌN LEVEL */
+          /* MÀN HÌNH START */
           <Card style={styles.card} hoverable>
             <div style={{ textAlign: "center", padding: "20px 0" }}>
               <Title level={1} style={{ color: "#722ed1" }}>
@@ -338,7 +366,6 @@ const Game: React.FC = () => {
                 Chọn độ khó để thử thách bản thân:
               </Paragraph>
 
-              {/* RADIO CHỌN LEVEL */}
               <div style={{ marginBottom: 24 }}>
                 <Radio.Group
                   value={selectedLevel}
@@ -353,7 +380,6 @@ const Game: React.FC = () => {
                 </Radio.Group>
               </div>
 
-              {/* Hiển thị High Score ứng với Level đang chọn */}
               <div
                 style={{
                   marginBottom: 20,
@@ -388,27 +414,36 @@ const Game: React.FC = () => {
           </Card>
         ) : (
           /* MÀN HÌNH GAMEPLAY */
-          <Card style={{ ...styles.card, maxWidth: 600 }}>
+          <Card style={{ ...styles.card, maxWidth: 600, position: "relative" }}>
+            {/* TIMER PROGRESS CIRCLE (Góc phải) */}
+            <div style={{ position: "absolute", top: 20, right: 20 }}>
+              <Progress
+                type="circle"
+                percent={(timeLeft / TIME_PER_QUESTION) * 100}
+                format={() => `${timeLeft}s`}
+                width={50}
+                strokeColor={getTimerColor()}
+              />
+            </div>
+
             <div
               style={{
                 marginBottom: 20,
                 display: "flex",
-                justifyContent: "space-between",
-                alignItems: "center",
+                flexDirection: "column",
+                alignItems: "flex-start",
               }}
             >
               <Space>
-                <Text strong>
-                  Câu {questionCount}/{selectedLevel}
-                </Text>
-                <Tag color="purple">{selectedLevel} câu</Tag>
+                <Tag color="purple">Level: {selectedLevel}</Tag>
+                <Tag color="gold">Điểm: {score}</Tag>
               </Space>
 
-              <Text strong style={{ color: "#faad14" }}>
-                Điểm: {score}
+              <Text strong style={{ marginTop: 10 }}>
+                Câu {questionCount}/{selectedLevel}
               </Text>
             </div>
-            {/* Progress bar tính theo selectedLevel */}
+
             <Progress
               percent={(questionCount / selectedLevel) * 100}
               showInfo={false}
@@ -430,6 +465,8 @@ const Game: React.FC = () => {
               {currentQuestion?.options.map((item, index) => {
                 const isSelected = selectedAnswer === item.term;
                 const isCorrect = item.term === currentQuestion?.correctTerm;
+
+                // Logic màu sắc nút
                 let btnStyle: React.CSSProperties = {
                   height: "auto",
                   padding: "15px",
